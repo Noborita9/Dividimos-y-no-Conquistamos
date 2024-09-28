@@ -7,7 +7,8 @@
 ### 3.1 Rectangle of Maximum Sum
 
 ## 4 String
-### KMP Prefix Function
+### 4.1 LPS Longest Prefix Suffix
+### 4.2 KMP Prefix Function
 
 ## 5 Grafos
 ### 5.1 Dijkstra - PriorityQueue // ?
