@@ -1,11 +1,12 @@
 # Cheatsheet
 
 ## 1 - Details
-### 1.1 - [CPP Template file](src/1%20-%20Details/template.cpp)
+### 1.1 [CPP Template file](src/1%20-%20Details/template.cpp)
+### 1.2 [Handy Computation](src/1%20-%20Details/computation.cpp)
 
 ## 2 - Data Structures
 ### 2.1 [BIT](src/2%20-%20Data%20Structure/BIT.cpp)
-### 2.2 RMQ (Sparse Table)
+### 2.2 [RMQ (Sparse Table)](src/2%20-%20Data%20Structure/RMQ_SparseT.cpp)
 ### 2.3 [Disjoint Set](src/2%20-%20Data%20Structure/DSU.cpp)
 
 ## 3 DP
