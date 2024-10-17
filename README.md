@@ -15,9 +15,9 @@
 ### 4.2 KMP Prefix Function
 
 ## 5 Graph
-### 5.1 Dijkstra TODO
+### 5.1 Dijkstra [a relative link](src/5%20-%20Graph/dijkstra.cpp)
 ### 5.2 Bellman Ford TODO
-### 5.3 Bridges TODO
+### 5.3 Bridges (Tarjan) TODO
 ### 5.4 SCC TODO
 ### 5.5 Flow - FordFulkerson // ?
 ### 5.6 Maximum Bipartite Matching // ?
