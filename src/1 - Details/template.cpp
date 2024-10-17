@@ -5,6 +5,12 @@ using namespace std;
 
 #define ll long long
 #define ii pair<ll, ll>
+#define F first
+#define S second
+#define forni(i, o, n) for (int i = o; i < n; i ++)
+#define forn(i, n) forni(i, 0, n)
+#define pub push_back
+#define popf pop_front
 
 #ifdef LOCAL
 #define DBG(x) cout << "[" << x << "]";
