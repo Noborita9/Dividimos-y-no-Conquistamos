@@ -14,8 +14,9 @@
 
 ## 4 String
 ### 4.1 [String HASHING](/src/4%20-%20String/HASHING.cpp)
+### 4.2 [Rabin-Karp String Matching](/src/4%20-%20String/RK.cpp)
 ### 4.2 [LPS Longest Prefix Suffix](/src/4%20-%20String/LPS.cpp)
-### 4.3 [KMP Prefix Function](/src/4%20-%20String/KMP.cpp)
+### 4.3 [KMP String Searching](/src/4%20-%20String/KMP.cpp)
 
 ## 5 Graph
 ### 5.1 [Tarjan(Bridge/AP)](src/5%20-%20Graph/tarjan.cpp)
