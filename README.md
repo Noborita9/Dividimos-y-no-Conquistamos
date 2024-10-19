@@ -20,7 +20,7 @@
 
 ## 5 Graph
 ### 5.1 [Tarjan(Bridge/AP)](src/5%20-%20Graph/tarjan.cpp)
-### 5.2 SCC TODO
+### 5.2 [SCC](/src/5%20-%20Graph/SCC.cpp)
 ### 5.3 [Dijkstra](src/5%20-%20Graph/dijkstra.cpp)
 ### 5.4 [Floyd Warshall](src/5%20-%20Graph/floyd.cpp)
 ### 5.5 [Bellman Ford](src/5%20-%20Graph/bellman.cpp)
