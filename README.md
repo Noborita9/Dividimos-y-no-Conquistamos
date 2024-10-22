@@ -33,3 +33,15 @@
 ### 6.3 - FFT
 ### 6.4 - NTT
 ### 6.5 - Euler's Totient
+### 6.6 - Mobius
+### 6.7 - Josephus
+### 6.8 - Catalan Numbers
+### 6.9 - Combinatorics
+### 6.10 - Euclidean Extended
+### 6.11 - Prime Factorization
+
+## 6 - Geometry
+### 7.1 Operations
+### 7.2 Ray Casting
+### 7.3 Polygon Area
+### 7.4 Convex Hull
