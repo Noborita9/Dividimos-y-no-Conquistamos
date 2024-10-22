@@ -28,8 +28,8 @@
 ### 5.6 Maximum Bipartite Matching // ?
 
 ## 6 - Math
-### 6.1 - Euler's Phi
-### 6.2 - Mobius
-### 6.3 - FFT // ?
-### 6.4 - Catalan Numbers
-### 6.5 - Josephus
+### 6.1 - Binary Pow
+### 6.2 - Sieve of Eratosthenes
+### 6.3 - FFT
+### 6.4 - NTT
+### 6.5 - Euler's Totient
