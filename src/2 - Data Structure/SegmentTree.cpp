@@ -1,156 +1,102 @@
-#include <bits/stdc++.h>
-using namespace std;
-using ll = long long;
-
-// Node structure to store segment information
-struct node {
-    ll val = 0;    // Change this value based on problem
-    ll lazy = 0;   // Change this value based on problem
+struct Node {
+    long long sum = 0;
+    long long min_val = LLONG_MAX;
+    long long max_val = LLONG_MIN;
+    long long lazy = 0;
     
-    // Reset the node
-    void reset() {
-        val = 0;   // Change to appropriate identity value (0, INF, -INF)
-        lazy = 0;
+    // Merge function to combine two nodes
+    void merge(const Node& left, const Node& right) {
+        sum = left.sum + right.sum;
+        min_val = min(left.min_val, right.min_val);
+        max_val = max(left.max_val, right.max_val);
     }
     
-    // Merge two nodes (change this based on problem)
-    void merge(const node& left, const node& right) {
-        val = min(left.val, right.val);
-        // Other possible operations:
-        // val = left.val + right.val;
-        // val = max(left.val, right.val);
-        // val = gcd(left.val, right.val);
-    }
-    
-    // Apply value to lazy node (change this based on problem)
-    void apply(ll x, ll size) {
-        val += x;          // For addition
-        lazy += x;         // For addition
-        
-        // For assignment:
-        // val = x
-        // lazy = x
-        
-        // For multiplication:
-        // val *= x
-        // lazy *= x
+    // Update function for lazy propagation
+    void apply(int l, int r, long long value) {
+        sum += (r - l + 1) * value;
+        min_val += value;
+        max_val += value;
+        lazy += value;
     }
 };
 
-// Actual segment tree implementation
-struct Segtree {
-    ll n;
-    vector<node> tree;
+struct SegTree {
+    int n;
+    vector<Node> tree;
     
-    // init tree
-    void init(ll _n) {
-        n = _n;
-        tree.resize(4 * n);
+    SegTree(int n) : n(n) {
+        tree.resize(4 * n + 5);
     }
     
-    // Reset single node
-    void reset(ll id) {
-        tree[id].reset();
+    SegTree(vector<int>& arr) : n(arr.size()) {
+        tree.resize(4 * n + 5);
+        build(arr, 0, 0, n-1);
     }
     
-    // Push lazy value down to children
-    void push(ll id, ll l, ll r) {
-        if (tree[id].lazy == 0) return;  // No lazy value
+    // Push lazy value to children
+    void push(int id, int l, int r) {
+        if (tree[id].lazy == 0) return;
         
-        ll mid = (l + r) >> 1;
-        ll left = 2 * id + 1;
-        ll right = 2 * id + 2;
-        
-        // Push to children if not leaf
-        if (l != r) {
-            tree[left].apply(tree[id].lazy, mid - l + 1);
-            tree[right].apply(tree[id].lazy, r - mid);
-        }
-        
-        tree[id].lazy = 0;  // Reset lazy
+        int mid = (l + r) >> 1;
+        tree[2*id + 1].apply(l, mid, tree[id].lazy);
+        tree[2*id + 2].apply(mid+1, r, tree[id].lazy);
+        tree[id].lazy = 0;
     }
     
-    // Build tree from array
-    void build(ll id, ll l, ll r, vector<ll>& arr) {
+    void build(vector<int>& arr, int id, int l, int r) {
         if (l == r) {
-            tree[id].val = arr[l];
+            tree[id].sum = arr[l];
+            tree[id].min_val = arr[l];
+            tree[id].max_val = arr[l];
             return;
         }
-        ll mid = (l + r) >> 1;
-        build(2*id + 1, l, mid, arr);
-        build(2*id + 2, mid + 1, r, arr);
+        
+        int mid = (l + r) >> 1;
+        build(arr, 2*id + 1, l, mid);
+        build(arr, 2*id + 2, mid+1, r);
         tree[id].merge(tree[2*id + 1], tree[2*id + 2]);
     }
     
-    // Update range [ul, ur] with value
-    void upd(ll id, ll l, ll r, ll ul, ll ur, ll val) {
-        if (l > ur || r < ul) return;
-        if (l >= ul && r <= ur) {
-            tree[id].apply(val, r - l + 1);
+    // Range update with lazy propagation
+    void update(int id, int l, int r, int ql, int qr, long long val) {
+        if (ql > r || qr < l) return;
+        
+        if (ql <= l && r <= qr) {
+            tree[id].apply(l, r, val);
             return;
         }
+        
         push(id, l, r);
-        ll mid = (l + r) >> 1;
-        upd(2*id + 1, l, mid, ul, ur, val);
-        upd(2*id + 2, mid + 1, r, ul, ur, val);
+        int mid = (l + r) >> 1;
+        update(2*id + 1, l, mid, ql, qr, val);
+        update(2*id + 2, mid+1, r, ql, qr, val);
         tree[id].merge(tree[2*id + 1], tree[2*id + 2]);
     }
     
-    // Query range [ql, qr]
-    node qry(ll id, ll l, ll r, ll ql, ll qr) {
-        if (l > qr || r < ql) {
-            node res;
-            res.reset();
-            return res;
+    // Range query
+    Node query(int id, int l, int r, int ql, int qr) {
+        if (ql > r || qr < l) return Node();
+        
+        if (ql <= l && r <= qr) {
+            return tree[id];
         }
-        if (l >= ql && r <= qr) return tree[id];
+        
         push(id, l, r);
-        ll mid = (l + r) >> 1;
-        node left = qry(2*id + 1, l, mid, ql, qr);
-        node right = qry(2*id + 2, mid + 1, r, ql, qr);
-        node res;
-        res.merge(left, right);
-        return res;
+        int mid = (l + r) >> 1;
+        Node left = query(2*id + 1, l, mid, ql, qr);
+        Node right = query(2*id + 2, mid+1, r, ql, qr);
+        
+        Node result;
+        result.merge(left, right);
+        return result;
     }
     
-    // Public methods for easier usage
-    void build(vector<ll>& arr) { 
-        init(arr.size()); 
-        build(0, 0, n-1, arr); 
+    // Public interface
+    void update(int l, int r, long long val) {
+        update(0, 0, n-1, l, r, val);
     }
-    void upd(ll l, ll r, ll val) { upd(0, 0, n-1, l, r, val); }
-    ll qry(ll l, ll r) { return qry(0, 0, n-1, l, r).val; }
+    
+    Node query(int l, int r) {
+        return query(0, 0, n-1, l, r);
+    }
 };
-
-// Example usage in competitive programming
-void solve() {
-    ll n, q;
-    cin >> n >> q;
-    vector<ll> arr(n);
-    for(ll i = 0; i < n; i++) cin >> arr[i];
-    
-    Segtree sg;
-    sg.build(arr);  // Build segment tree
-    
-    while(q--) {
-        ll type, l, r;
-        cin >> type >> l >> r;
-        if(type == 1) {  // Update query
-            ll val; cin >> val;
-            sg.upd(l, r, val);
-        } else {         // Range query
-            cout << sg.qry(l, r) << '\n';
-        }
-    }
-}
-
-int main() {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    
-    int t = 1;
-    // cin >> t;  // Uncomment for multiple test cases
-    while(t--) solve();
-    
-    return 0;
-}
