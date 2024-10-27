@@ -8,9 +8,15 @@
 ### 2.1 [BIT](src/2%20-%20Data%20Structure/BIT.cpp)
 ### 2.2 [RMQ (Sparse Table)](src/2%20-%20Data%20Structure/RMQ_SparseT.cpp)
 ### 2.3 [Disjoint Set](src/2%20-%20Data%20Structure/DSU.cpp)
+### 2.4 [Segment Tree](/src/2%20-%20Data%20Structure/SegmentTree.cpp)
 
 ## 3 DP
-### 3.1 Rectangle of Maximum Sum
+### 3.1 [Coin Change](/src/3%20-%20DP/coinChange.cpp)
+### 3.2 [Edit Distance](/src/3%20-%20DP/editDistance.cpp)
+### 3.3 [Kadane](/src/3%20-%20DP/kadane.cpp)
+### 3.4 [Knapsack](/src/3%20-%20DP/knapsack.cpp)
+### 3.5 [LCS](/src/3%20-%20DP/LCS.cpp)
+### 3.6 [LIS](/src/3%20-%20DP/LIS.cpp)
 
 ## 4 String
 ### 4.1 [String HASHING](/src/4%20-%20String/HASHING.cpp)
