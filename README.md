@@ -30,6 +30,7 @@
 ### 5.3 [Dijkstra](src/5%20-%20Graph/dijkstra.cpp)
 ### 5.4 [Floyd Warshall](src/5%20-%20Graph/floyd.cpp)
 ### 5.5 [Bellman Ford](src/5%20-%20Graph/bellman.cpp)
+### 5.6 [Dinic Flow](/src/5%20-%20Graph/Flow.cpp)
 ### 5.5 Flow - FordFulkerson // ?
 ### 5.6 Maximum Bipartite Matching // ?
 
