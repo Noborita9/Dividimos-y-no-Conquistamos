@@ -17,6 +17,8 @@
 ### 4.2 [Rabin-Karp String Matching](/src/4%20-%20String/RK.cpp)
 ### 4.3 [LPS Longest Prefix Suffix](/src/4%20-%20String/LPS.cpp)
 ### 4.4 [KMP String Searching](/src/4%20-%20String/KMP.cpp)
+### 4.5 [TRIE Suffix Tree](/src/4%20-%20String/TRIE.cpp)
+### 4.6 [Z-FUNCTION Search Patterns](/src/4%20-%20String/Z_FUNCTION.cpp)
 
 ## 5 Graph
 ### 5.1 [Tarjan(Bridge/AP)](src/5%20-%20Graph/tarjan.cpp)
