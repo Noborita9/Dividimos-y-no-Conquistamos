@@ -3,6 +3,7 @@
 ## 1 - Details
 ### 1.1 [CPP Template file](src/1%20-%20Details/template.cpp)
 ### 1.2 [Handy Computation](src/1%20-%20Details/computation.cpp)
+### 1.3 [Fast Python Input](src/1%20-%20Details/fast.py)
 
 ## 2 - Data Structures
 ### 2.1 [BIT](src/2%20-%20Data%20Structure/BIT.cpp)
