@@ -41,3 +41,6 @@
 \contentsline {subsection}{\numberline {7.2}OPERATIONS}{19}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}POLYGON AREA}{19}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}RAY CASTING}{20}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Trees}{20}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Centroid}{20}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}LCA}{21}{subsection.8.2}%
