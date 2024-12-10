@@ -29,15 +29,15 @@
 \contentsline {subsection}{\numberline {6.2}CATALAN}{13}{subsection.6.2}%
 \contentsline {subsection}{\numberline {6.3}COMBINATORICS}{13}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}EUCLIDEAN EXTENDED}{13}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}EULER TOTIENT}{13}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}JOSEPHUS}{13}{subsection.6.6}%
+\contentsline {subsection}{\numberline {6.5}EULER TOTIENT}{14}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}JOSEPHUS}{14}{subsection.6.6}%
 \contentsline {subsection}{\numberline {6.7}MOBIUS}{14}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}NTT}{14}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}PRIME FACTORIZATION}{15}{subsection.6.9}%
+\contentsline {subsection}{\numberline {6.8}NTT}{15}{subsection.6.8}%
+\contentsline {subsection}{\numberline {6.9}PRIME FACTORIZATION}{16}{subsection.6.9}%
 \contentsline {subsection}{\numberline {6.10}SIEVE}{16}{subsection.6.10}%
 \contentsline {subsection}{\numberline {6.11}fft}{16}{subsection.6.11}%
 \contentsline {section}{\numberline {7}Geometry}{18}{section.7}%
 \contentsline {subsection}{\numberline {7.1}CONVEX HULL}{18}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}OPERATIONS}{18}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}OPERATIONS}{19}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}POLYGON AREA}{19}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}RAY CASTING}{19}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}RAY CASTING}{20}{subsection.7.4}%

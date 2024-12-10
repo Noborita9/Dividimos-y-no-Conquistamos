@@ -11,7 +11,7 @@ std::copy(array.begin(), array.end(), st[0]);
 
 // Build
 for (int i = 1; (1 << i) <= n; i ++){
-    for (int j = 0; j + (1 << i) - 1 < n; j ++){
+    for (int j = 0; j + (1 << (i - 1)) < n; j ++){
         st[i][j] = min(st[i-1][j], st[i-1][j + (1 << (i - 1))]);
     }
 }

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.10)  10 DEC 2024 14:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.10)  10 DEC 2024 15:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -495,29 +495,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./src/Math/BINARY_POW.cpp [12]) (./src/Math/CATALAN.cpp)
-(./src/Math/COMBINATORICS.cpp) (./src/Math/EUCLIDEAN_EXTENDED.cpp)
-(./src/Math/EULER_TOTIENT.cpp) (./src/Math/JOSEPHUS.cpp [13])
-(./src/Math/MOBIUS.cpp) (./src/Math/NTT.cpp [14]
+(./src/Math/COMBINATORICS.cpp) (./src/Math/EUCLIDEAN_EXTENDED.cpp [13])
+(./src/Math/EULER_TOTIENT.cpp) (./src/Math/JOSEPHUS.cpp) (./src/Math/MOBIUS.cpp
+[14]) (./src/Math/NTT.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15])
+(./src/Math/PRIME_FACTORIZATION.cpp) (./src/Math/SIEVE.cpp) (./src/Math/fft.cpp
+[16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./src/Math/PRIME_FACTORIZATION.cpp [15]) (./src/Math/SIEVE.cpp)
-Underfull \vbox (badness 4556) has occurred while \output is active []
+(./src/Geometry/CONVEX_HULL.cpp [18]) (./src/Geometry/OPERATIONS.cpp)
+(./src/Geometry/POLYGON_AREA.cpp [19]) (./src/Geometry/RAY_CASTING.cpp)
+[20
 
-
-(./src/Math/fft.cpp [16]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-(./src/Geometry/CONVEX_HULL.cpp) [18] (./src/Geometry/OPERATIONS.cpp)
-(./src/Geometry/POLYGON_AREA.cpp) (./src/Geometry/RAY_CASTING.cpp) [19]
-
+] 
 enddocument/afterlastpage: lastpage setting LastPage.
 (./guide.aux)
  ***********
@@ -528,10 +527,10 @@ Package rerunfilecheck Info: File `guide.out' has not changed.
 (rerunfilecheck)             Checksum: 08AC48428607A75020B6501FE84710C6;4192.
  ) 
 Here is how much of TeX's memory you used:
- 15699 strings out of 474116
- 237757 string characters out of 5743681
- 2503187 words of memory out of 5000000
- 36269 multiletter control sequences out of 15000+600000
+ 15755 strings out of 474116
+ 238620 string characters out of 5743681
+ 2471187 words of memory out of 5000000
+ 36284 multiletter control sequences out of 15000+600000
  562357 words of font info for 53 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,82p,292b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -541,10 +540,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on guide.pdf (19 pages, 204326 bytes).
+Output written on guide.pdf (20 pages, 207550 bytes).
 PDF statistics:
- 2111 PDF objects out of 2487 (max. 8388607)
- 2057 compressed objects within 21 object streams
- 1501 named destinations out of 1728 (max. 500000)
+ 2165 PDF objects out of 2487 (max. 8388607)
+ 2109 compressed objects within 22 object streams
+ 1542 named destinations out of 1728 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
