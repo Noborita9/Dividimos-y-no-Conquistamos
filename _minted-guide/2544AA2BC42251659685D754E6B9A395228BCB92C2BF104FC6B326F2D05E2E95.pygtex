@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include}\PYG{+w}{ }\PYG{c+cpf}{\PYGZlt{}bits/stdc++.h\PYGZgt{}}
+\PYG{k}{using}\PYG{+w}{ }\PYG{k}{namespace}\PYG{+w}{ }\PYG{n+nn}{std}\PYG{p}{;}
+\PYG{c+cp}{\PYGZsh{}define TESTS}
+\PYG{c+cp}{\PYGZsh{}define LOCAL}
+
+\PYG{c+cp}{\PYGZsh{}define ll long long}
+\PYG{c+cp}{\PYGZsh{}define ii pair\PYGZlt{}ll, ll\PYGZgt{}}
+\PYG{c+cp}{\PYGZsh{}define F first}
+\PYG{c+cp}{\PYGZsh{}define S second}
+\PYG{c+cp}{\PYGZsh{}define forni(i, o, n) for (int i = o; i \PYGZlt{} n; i ++)}
+\PYG{c+cp}{\PYGZsh{}define forn(i, n) forni(i, 0, n)}
+\PYG{c+cp}{\PYGZsh{}define pub push\PYGZus{}back}
+\PYG{c+cp}{\PYGZsh{}define popf pop\PYGZus{}front}
+
+\PYG{c+cp}{\PYGZsh{}ifdef LOCAL}
+\PYG{c+cp}{\PYGZsh{}define DBG(x) cout \PYGZlt{}\PYGZlt{} \PYGZdq{}[\PYGZdq{} \PYGZlt{}\PYGZlt{} x \PYGZlt{}\PYGZlt{} \PYGZdq{}]\PYGZdq{};}
+\PYG{c+cp}{\PYGZsh{}else}
+\PYG{c+cp}{\PYGZsh{}define DBG(x) 42}
+\PYG{c+cp}{\PYGZsh{}endif}
+
+
+\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{solve}\PYG{p}{()\PYGZob{}}
+
+\PYG{p}{\PYGZcb{}}
+
+
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{main}\PYG{p}{()\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{ios}\PYG{o}{::}\PYG{n}{sync\PYGZus{}with\PYGZus{}stdio}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}\PYG{n}{cin}\PYG{p}{.}\PYG{n}{tie}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{);}
+\PYG{c+cp}{\PYGZsh{}ifdef LOCAL}
+\PYG{+w}{    }\PYG{n}{freopen}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}in.txt\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}r\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{stdio}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{freopen}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}out.txt\PYGZdq{}}\PYG{p}{,}\PYG{l+s}{\PYGZdq{}w\PYGZdq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{stdout}\PYG{p}{);}
+\PYG{c+cp}{\PYGZsh{}endif}
+\PYG{+w}{    }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{tt}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{c+cp}{\PYGZsh{}ifdef TESTS}
+\PYG{+w}{    }\PYG{n}{cin}\PYG{+w}{ }\PYG{o}{\PYGZgt{}\PYGZgt{}}\PYG{+w}{ }\PYG{n}{tt}\PYG{p}{;}
+\PYG{c+cp}{\PYGZsh{}endif}
+\PYG{+w}{    }\PYG{k}{while}\PYG{p}{(}\PYG{n}{tt}\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{p}{)}\PYG{n}{solve}\PYG{p}{();}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

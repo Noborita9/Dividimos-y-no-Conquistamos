@@ -28,14 +28,14 @@ vector<int> z_function(string s) {
     return z;
 }
 
-// Función de ejemplo para encontrar todas las ocurrencias de un patrón
+
 vector<int> find_pattern(string text, string pattern) {
-    // Concatenamos pattern + '$' + text
+
     string s = pattern + "$" + text;
     vector<int> z = z_function(s);
     vector<int> result;
     
-    // Buscamos Z-valores que sean iguales a la longitud del patrón
+
     for(int i = pattern.length() + 1; i < s.length(); i++) {
         if(z[i] == pattern.length()) {
             result.push_back(i - pattern.length() - 1);

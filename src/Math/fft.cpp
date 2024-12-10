@@ -83,7 +83,7 @@ const ld PI = acos(-1);
 void fft(vector<cd>& a, bool invert) {
     int n = a.size();
     
-    // Permutación bit-reversal
+
     for (int i = 1, j = 0; i < n; ++i) {
         int bit = n >> 1;
         for (; j & bit; bit >>=1)
@@ -110,7 +110,7 @@ void fft(vector<cd>& a, bool invert) {
         }
     }
 
-    // División por n si es la inversa
+
     if (invert) {
         for (cd & x : a)
             x /= n;
@@ -118,7 +118,7 @@ void fft(vector<cd>& a, bool invert) {
 }
 
 vector<ll> multiply(const vector<ll>& a, const vector<ll>& b) {
-    const ll BASE = 1e6; // Ajusta BASE según sea necesario
+    const ll BASE = 1e6;
 
     int n = 1;
     while(n < (int)(a.size() + b.size()))

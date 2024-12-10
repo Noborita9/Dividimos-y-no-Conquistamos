@@ -1,4 +1,4 @@
-//Descompone en primos
+
 vector<pair<ll, ll>> prime_factors(ll n) {
     vector<pair<ll, ll>> factors;
     for (ll i = 2; i * i <= n; i++) {
@@ -15,7 +15,7 @@ vector<pair<ll, ll>> prime_factors(ll n) {
     return factors;
 }
 
-// Función para obtener todos los divisores de un número n
+
 vector<ll> divisors(ll n) {
     vector<ll> divs;
     for (ll i = 1; i * i <= n; i++) {

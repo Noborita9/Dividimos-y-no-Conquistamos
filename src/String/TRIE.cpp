@@ -54,6 +54,6 @@ struct TrieStruct {
             }
             current = current->children[index];
         }
-        return true;  // Si llegamos aquí, el prefijo existe
+        return true;  
     }
 };

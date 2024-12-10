@@ -1,0 +1,271 @@
+%"The PDF file may contain up to 25 pages of reference material, single-sided, letter or A4 size, with text and illustrations readable by a person with correctable eyesight without magnification from a distance of 1/2 meter."
+\input{preamble.tex}
+\begin{document}
+% Gracias Demetrio
+\def\title{Universidad ORT Uruguay}
+.\\[0.2cm]
+\centering{\LARGE\textbf{Dividimos y No Conquistamos (D\&!C)}} \\[0.5cm]
+% \centering{\includegraphics[width=5.5cm]{img/vasito.jpg}}
+\tableofcontents\newpage
+
+\section{Template}
+\subsection{C++ Template}
+\cppfile{src/Details/template.cpp}
+
+\section{Data structures}
+\subsection{BIT}
+\cppfile{src/DataStructure/BIT.cpp}
+\subsection{DSU}
+\cppfile{src/DataStructure/DSU.cpp}
+\subsection{Sparse Table}
+\cppfile{src/DataStructure/SparseTable.cpp}
+\subsection{Segment tree}
+\cppfile{src/DataStructure/SegmentTree.cpp}
+
+\section{Dynamic Programming}
+\subsection{Knapsack}
+\cppfile{src/DP/knapsack.cpp}
+\subsection{LIS}
+\cppfile{src/DP/LIS.cpp}
+\subsection{Edit Distance}
+\cppfile{src/DP/editDistance.cpp}
+\subsection{Kadane}
+\cppfile{src/DP/kadane.cpp}
+
+\section{Strings}
+\subsection{Prefix Tree}
+\cppfile{src/String/TRIE.cpp}
+\subsection{HASHING}
+\cppfile{src/String/HASHING.cpp}
+\subsection{KMP}
+\cppfile{src/String/KMP.cpp}
+\subsection{LPS}
+\cppfile{src/String/LPS.cpp}
+\subsection{RK}
+\cppfile{src/String/RK.cpp}
+\subsection{Z FUNCTION}
+\cppfile{src/String/Z_FUNCTION.cpp}
+
+\section{Graph}
+\subsection{Tarjan}
+\cppfile{src/Graph/tarjan.cpp}
+\subsection{Bellman Ford}
+\cppfile{src/Graph/bellman.cpp}
+\subsection{SCC}
+\cppfile{src/Graph/SCC.cpp}
+\subsection{Flow}
+\cppfile{src/Graph/Flow.cpp}
+\subsection{Ford Fulkerson}
+\cppfile{src/Graph/fordFulkerson.cpp}
+
+\section{Math}
+\subsection{BINARY POW}
+\cppfile{src/Math/BINARY_POW.cpp}
+\subsection{CATALAN}
+\cppfile{src/Math/CATALAN.cpp}
+\subsection{COMBINATORICS}
+\cppfile{src/Math/COMBINATORICS.cpp}
+\subsection{EUCLIDEAN EXTENDED}
+\cppfile{src/Math/EUCLIDEAN_EXTENDED.cpp}
+\subsection{EULER TOTIENT}
+\cppfile{src/Math/EULER_TOTIENT.cpp}
+\subsection{JOSEPHUS}
+\cppfile{src/Math/JOSEPHUS.cpp}
+\subsection{MOBIUS}
+\cppfile{src/Math/MOBIUS.cpp}
+\subsection{NTT}
+\cppfile{src/Math/NTT.cpp}
+\subsection{PRIME FACTORIZATION}
+\cppfile{src/Math/PRIME_FACTORIZATION.cpp}
+\subsection{SIEVE}
+\cppfile{src/Math/SIEVE.cpp}
+\subsection{fft}
+\cppfile{src/Math/fft.cpp}
+
+\section{Geometry}
+\subsection{CONVEX HULL}
+\cppfile{src/Geometry/CONVEX_HULL.cpp}
+\subsection{OPERATIONS}
+\cppfile{src/Geometry/OPERATIONS.cpp}
+\subsection{POLYGON AREA}
+\cppfile{src/Geometry/POLYGON_AREA.cpp}
+\subsection{RAY CASTING}
+\cppfile{src/Geometry/RAY_CASTING.cpp}
+
+
+% \section{Graphs}
+% \subsection{Topological sort}
+% \cppfile{graphs/toposort.cpp}
+% \subsection{Kruskal (+ Union-Find)}
+% \cppfile{graphs/kruskal.cpp}
+% \subsection{Dijkstra}
+% \cppfile{graphs/dijkstra.cpp}
+% \subsection{Bellman-Ford}
+% \cppfile{graphs/bellman_ford.cpp}
+% \subsection{Floyd-Warshall}
+% \cppfile{graphs/floyd_warshall.cpp}
+% \subsection{Strongly connected components (+ 2-SAT)}
+% \cppfile{graphs/tarjan_2sat.cpp}
+% \subsection{Articulation - Bridges - Biconnected}
+% \cppfile{graphs/articulation_bridges_biconnected.cpp}
+% \subsection{Chu-Liu (minimum spanning arborescence)}
+% \cppfile{graphs/chu_liu.cpp}
+% \subsection{LCA - Binary Lifting}
+% \cppfile{graphs/lca.cpp}
+% \subsection{Heavy-Light decomposition}
+% \cppfile{graphs/hld.cpp}
+% \subsection{Centroid decomposition}
+% \cppfile{graphs/centroid.cpp}
+% \subsection{Parallel DFS}
+% \cppfile{graphs/parallel_dfs.cpp}
+% \subsection{Eulerian path}
+% \cppfile{graphs/eulerian_path.cpp}
+% \subsection{Dynamic connectivity}
+% \cppfile{graphs/dynamic_connectivity.cpp}
+% \subsection{Edmond's blossom (matching in general graphs)}
+% \cppfile{graphs/edmonds_blossom.cpp}
+
+% \section{Math}
+% \subsection{Identities}
+% {
+% 	$C_n = \frac{2(2n-1)}{n+1} C_{n-1}$
+
+% 	$C_n = \frac{1}{n+1} \binom{2n}{n}$
+
+% 	$C_n \sim \frac{4^n}{n^{3/2}\sqrt{\pi}}$
+
+% 	$\sigma(n) = O(\log(\log(n)))$ (number of divisors of $n$)
+
+% 	$F_{2n+1} = F_{n}^2 + F_{n+1}^2$
+
+% 	$F_{2n} = F_{n+1}^2 - F_{n-1}^2$
+
+% 	$\sum_{i=1}^n F_i = F_{n+2}-1$
+
+% 	$F_{n+i}F_{n+j} - F_nF_{n+i+j} = (-1)^n F_iF_j$
+
+% 	(Möbius Inv. Formula)
+% 	Let $g(n) = \sum_{d\mid n} f(d)$, then $f(n)=\sum{d\mid n} g(d) \mu\left(\frac{n}{d})\right)$.
+% }
+% \subsection{Theorems}
+% \cppfile{math/theorems.txt}
+% \subsection{Integer floor division}
+% \cppfile{math/floor_division.cpp}
+% %\subsection{Extended Euclid} % allready in diophantine
+% %\cppfile{math/extended_euclid.cpp}
+% \subsection{Sieve of Eratosthenes}
+% \cppfile{math/sieve.cpp}
+% \subsection{Generate divisors}
+% \cppfile{math/divisors.cpp}
+% \subsection{Pollard's rho}
+% \cppfile{math/pollard_rho.cpp}
+% \subsection{Simpson's rule}
+% \cppfile{math/simpson.cpp}
+% \subsection{Polynomials}
+% \cppfile{math/polynomial.cpp}
+% \subsection{Bairstow}
+% \cppfile{math/bairstow.cpp}
+% \subsection{Fast Fourier Transform}
+% \cppfile{math/fft.cpp}
+% \subsection{Fast Hadamard Transform}
+% \cppfile{math/fht.cpp}
+% \subsection{Karatsuba}
+% \cppfile{math/karatsuba.cpp}
+% \subsection{Diophantine}
+% \cppfile{math/diophantine.cpp}
+% \subsection{Modular inverse}
+% \cppfile{math/inversemod.cpp}
+% \subsection{Chinese remainder theorem}
+% \cppfile{math/crt.cpp}
+% \subsection{Mobius}
+% \cppfile{math/mobius.cpp}
+% \subsection{Matrix exponentiation}
+% \cppfile{math/matrix_fast_pow.cpp}
+% \subsection{Matrix reduce and determinant}
+% \cppfile{math/matrix_reduce.cpp}
+% \subsection{Simplex}
+% \cppfile{math/simplex.cpp}
+% \subsection{Discrete log}
+% \cppfile{math/discrete_log.cpp}
+% \subsection{Berlekamp Massey}
+% \cppfile{math/berlekamp_massey.cpp}
+% \subsection{Linear Rec}
+% \cppfile{math/linear_rec.cpp}
+% \subsection{Tonelli Shanks}
+% \cppfile{math/tonelli_shanks.cpp}
+
+% \section{Geometry}
+% \subsection{Point}
+% \cppfile{geometry/point.cpp}
+% \subsection{Line}
+% \cppfile{geometry/line.cpp}
+% \subsection{Circle}
+% \cppfile{geometry/circle.cpp}
+% \subsection{Polygon}
+% \cppfile{geometry/polygon.cpp}
+% \subsection{Plane}
+% \cppfile{geometry/plane.cpp}
+% \subsection{Radial order of points}
+% \cppfile{geometry/radial_order.cpp}
+% \subsection{Convex hull}
+% \cppfile{geometry/convex_hull.cpp}
+% \subsection{Dual from planar graph}
+% \cppfile{geometry/planar_graph_dual.cpp}
+% \subsection{Halfplane intersection}
+% \cppfile{geometry/halfplanes.cpp}
+
+% \section{Strings}
+% \subsection{KMP}
+% \cppfile{strings/kmp.cpp}
+% \subsection{Z function}
+% \cppfile{strings/z_function.cpp}
+% \subsection{Manacher}
+% \cppfile{strings/manacher.cpp}
+% \subsection{Aho-Corasick}
+% \cppfile{strings/aho_corasick.cpp}
+% \subsection{Suffix automaton}
+% \cppfile{strings/suffix_automaton.cpp}
+% \subsection{Palindromic Tree}
+% \cppfile{strings/palindromic_tree.cpp}
+% \subsection{Suffix array (shorter but slower)}
+% \cppfile{strings/suffix_array_slow.cpp}
+% \subsection{Suffix array}
+% \cppfile{strings/suffix_array.cpp}
+% \subsection{LCP (Longest Common Prefix)}
+% \cppfile{strings/lcp.cpp}
+% \subsection{Suffix Tree (Ukkonen's algorithm)}
+% \cppfile{strings/suffix_tree.cpp}
+% \subsection{Hashing}
+% \cppfile{strings/hashing.cpp}
+% \subsection{Hashing with ll (using \_\_int128)}
+% \cppfile{strings/hashing_128.cpp}
+
+% \section{Flow}
+% \subsection{Matching (slower)}
+% \cppfile{flow/matching.cpp}
+% \subsection{Matching (Hopcroft-Karp)}
+% \cppfile{flow/hopcroft_karp.cpp}
+% \subsection{Hungarian}
+% \cppfile{flow/hungarian.cpp}
+% \subsection{Dinic}
+% \cppfile{flow/dinic.cpp}
+% \subsection{Min cost max flow}
+% \cppfile{flow/min_cost_max_flow.cpp}
+
+% \section{Other}
+% \subsection{Mo's algorithm}
+% \cppfile{other/mos_algorithm.cpp}
+% \subsection{Divide and conquer DP optimization}
+% \cppfile{other/divide_and_conquer_dp.cpp}
+% \subsection{Dates}
+% \cppfile{other/dates.cpp}
+% \subsection{C++ stuff}
+% \cppfile{other/cpp_stuff.cpp}
+% \subsection{Interactive problem tester template}
+% \cppfile{other/interactive_tester.py}
+% \subsection{Max number of divisors up to 10\textsuperscript{n}}
+% \cppfile{other/hcn.txt}
+% \subsection{Template}
+% \cppfile{other/template.cpp}
+
+\end{document}end{document}

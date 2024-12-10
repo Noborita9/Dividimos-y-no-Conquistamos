@@ -1,4 +1,3 @@
-// Función para precalcular los factoriales y sus inversos modulares
 vector<ll> fact, inv_fact;
 void precompute_factorials(ll n, ll mod) {
     fact.resize(n + 1);
@@ -13,7 +12,6 @@ void precompute_factorials(ll n, ll mod) {
     }
 }
 
-// Función para calcular C(n, k) % mod
 ll binomial_coefficient(ll n, ll k, ll mod) {
     if (k > n) return 0;
     return (fact[n] * inv_fact[k] % mod) * inv_fact[n - k] % mod;

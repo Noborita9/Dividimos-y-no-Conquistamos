@@ -29,6 +29,6 @@ vector<Point> convex_hull(vector<Point>& points) {
         hull.push_back(points[i]);
     }
 
-    hull.pop_back(); // Eliminar el último punto porque es el mismo que el primero
+    hull.pop_back(); 
     return hull;
 }

@@ -1,4 +1,3 @@
-// Complexity (maxFlow * E);
 #define ll long long
 const ll INF = (ll)4e18;
 struct Edge {
@@ -79,7 +78,6 @@ struct MaxFlow {
         return flow;
     }
     
-    // Returns the actual flow through each edge
     vector<ll> get_flows() {
         vector<ll> flows;
         for(int i = 0; i < edges.size(); i += 2) {

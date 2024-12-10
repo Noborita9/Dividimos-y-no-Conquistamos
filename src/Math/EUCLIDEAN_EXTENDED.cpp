@@ -1,4 +1,3 @@
-// Función para calcular el MCD de a y b, y los coeficientes x e y de la combinación lineal
 ll gcd_extended(ll a, ll b, ll &x, ll &y) {
     if (a == 0) {
         x = 0;

@@ -5,7 +5,7 @@ using namespace std;
 typedef long long ll;
 typedef pair<ll, ll> Point;
 
-// Verifica si un punto está dentro de un polígono utilizando ray-casting
+
 bool is_point_in_polygon(const vector<Point>& polygon, Point p) {
     bool inside = false;
     int n = polygon.size();
