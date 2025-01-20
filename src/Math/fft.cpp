@@ -208,7 +208,7 @@ vll multiply(const vll& a, const vll& b) {
 
     fft(in);
     for (C& x : in) x *= x;
-    for (int i = 0; i < n; i++) out[i] = in[-i & (n - 1)] - conj(in[i]);  // Corregido aquí
+    for (int i = 0; i < n; i++) out[i] = in[-i & (n - 1)] - conj(in[i]);  // Corregido aqui
     fft(out);
 
     vll res(a.size() + b.size() - 1);
