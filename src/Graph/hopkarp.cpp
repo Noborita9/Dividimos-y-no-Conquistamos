@@ -2,7 +2,6 @@ int L_S, R_S;
 vec<int> G[S_MX]; // S_MX (Maxima cantidad de nodos de un lado)
 int mat[S_MX];  // matching [0,L_S) -> [0,R_S)
 int inv[S_MX];  // matching [0,R_S) -> [0,L_S)
-
 int hopkarp() {
     fill(mat,mat+L_S,-1);
     fill(inv,inv+R_S,-1);
