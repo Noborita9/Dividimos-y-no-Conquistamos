@@ -73,6 +73,29 @@
 	morecomment=[l][\color{OliveGreen}]{\#}
 }
 
+\lstdefinestyle{Python}{
+    language=Python,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{darkblue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=9pt,
+    frame=l,
+    framesep=3pt,
+    breaklines=true,
+    breakatwhitespace=false,
+    showstringspaces=false,
+    tabsize=4,
+    % Python-specific settings
+    morekeywords={import,from,class,def,for,while,if,is,in,elif,else,try,except,finally,with,as,lambda,return,yield,break,continue,pass,raise},
+    emph=[1]{self},
+    emphstyle=[1]\color{OliveGreen}
+}
+
 %%% Macros
 \def\nbtitle#1{\begin{Large}\begin{center}\textbf{#1}\end{center}\end{Large}}
 \def\nbsection#1{\section{#1}}
@@ -82,4 +105,7 @@
 \def\complexity#1{\texorpdfstring{$\mathcal{O}(#1)$}{O(#1)}}
 \newcommand\cppfile[2][]{
 	\lstinputlisting[style=C++]{#2}
+}
+\newcommand\pyfile[2][]{
+    \lstinputlisting[style=Python]{#2}
 }

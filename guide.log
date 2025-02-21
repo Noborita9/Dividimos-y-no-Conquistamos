@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.10)  21 FEB 2025 14:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.12.10)  21 FEB 2025 14:49
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -451,36 +451,31 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 13.
 
 (./src/Details/template.cpp)
-Underfull \vbox (badness 4739) has occurred while \output is active []
-
-
-(./src/DataStructure/BIT.cpp) (./src/DataStructure/DSU.cpp [2])
-(./src/DataStructure/SparseTable.cpp) (./src/DataStructure/SegmentTree.cpp
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [3]
+(/usr/local/texlive/2024/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/02/21 1.10 listings language file
+)
+(./src/Details/fast.py) (./src/DataStructure/BIT.cpp) [2]
+(./src/DataStructure/DSU.cpp) (./src/DataStructure/SparseTable.cpp)
+(./src/DataStructure/SegmentTree.cpp [3]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./src/DP/knapsack.cpp) (./src/DP/LIS.cpp [4]) (./src/DP/editDistance.cpp)
+(./src/DP/knapsack.cpp [4]) (./src/DP/LIS.cpp) (./src/DP/editDistance.cpp)
 (./src/DP/kadane.cpp) (./src/String/TRIE.cpp [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-(./src/String/HASHING.cpp) [6] (./src/String/KMP.cpp) (./src/String/LPS.cpp)
-Underfull \vbox (badness 4556) has occurred while \output is active []
-
- [7]
-(./src/String/Z_FUNCTION.cpp
+(./src/String/HASHING.cpp [6]) (./src/String/KMP.cpp) (./src/String/LPS.cpp
+[7]) (./src/String/Z_FUNCTION.cpp
 LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 
 34.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ts1cmtt.fd
 File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 ))
-(./src/Graph/tarjan.cpp) (./src/Graph/bellman.cpp [8{/usr/local/texlive/2024/te
-xmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./src/Graph/SCC.cpp)
-(./src/Graph/hopkarp.cpp) (./src/Graph/konig.cpp [9])
+(./src/Graph/tarjan.cpp [8{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/c
+m-super/cm-super-ts1.enc}]) (./src/Graph/bellman.cpp) (./src/Graph/SCC.cpp)
+(./src/Graph/hopkarp.cpp [9]) (./src/Graph/konig.cpp)
 (./src/Graph/hungarian.cpp) (./src/Graph/Flow.cpp [10]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -496,10 +491,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 (./src/Math/BINARY_POW.cpp [13]) (./src/Math/CATALAN.cpp)
-(./src/Math/COMBINATORICS.cpp) (./src/Math/EUCLIDEAN_EXTENDED.cpp)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14]
+(./src/Math/COMBINATORICS.cpp) (./src/Math/EUCLIDEAN_EXTENDED.cpp [14])
 (./src/Math/EULER_TOTIENT.cpp) (./src/Math/JOSEPHUS.cpp) (./src/Math/MOBIUS.cpp
 [15]) (./src/Math/NTT.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -524,7 +516,10 @@ Overfull \hbox (108.4307pt too wide) in paragraph at lines 170--172
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19])
-(./src/Geometry/CONVEX_HULL.cpp) (./src/Geometry/OPERATIONS.cpp [20])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./src/Geometry/CONVEX_HULL.cpp [20]) (./src/Geometry/OPERATIONS.cpp)
 (./src/Geometry/POLYGON_AREA.cpp) (./src/Geometry/RAY_CASTING.cpp)
 (./src/Tree/Centroid.cpp [21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -546,34 +541,28 @@ enddocument/afterlastpage: lastpage setting LastPage.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
-
-
-Package rerunfilecheck Warning: File `guide.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `guide.out':
-(rerunfilecheck)             Before: D72260864E2C9BDAA60FC2E9AD357A65;4883
-(rerunfilecheck)             After:  4E6D6FD833398592FAB84B2C8741C611;4880.
+Package rerunfilecheck Info: File `guide.out' has not changed.
+(rerunfilecheck)             Checksum: 02655B19363D9EE04EFDE98C2A581DC5;5029.
  ) 
 Here is how much of TeX's memory you used:
- 16330 strings out of 474116
- 246413 string characters out of 5743681
- 2662187 words of memory out of 5000000
- 36506 multiletter control sequences out of 15000+600000
- 562357 words of font info for 53 fonts, out of 8000000 for 9000
+ 16505 strings out of 474116
+ 248413 string characters out of 5743681
+ 2672187 words of memory out of 5000000
+ 36665 multiletter control sequences out of 15000+600000
+ 562823 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,82p,292b,2154s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,12n,82p,292b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
-local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on guide.pdf (24 pages, 233575 bytes).
+local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/lo
+cal/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on guide.pdf (24 pages, 245892 bytes).
 PDF statistics:
- 2613 PDF objects out of 2984 (max. 8388607)
- 2549 compressed objects within 26 object streams
- 1882 named destinations out of 2073 (max. 500000)
- 377 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2631 PDF objects out of 2984 (max. 8388607)
+ 2565 compressed objects within 26 object streams
+ 1890 named destinations out of 2073 (max. 500000)
+ 385 words of extra memory for PDF output out of 10000 (max. 10000000)
 
