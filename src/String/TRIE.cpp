@@ -32,28 +32,4 @@ struct TrieStruct {
         }
         current->isEndOfWord = true;
     }
-    
-    bool search(string word) {
-        TrieNodeStruct* current = root;
-        for(char c : word) {
-            int index = c - 'a';
-            if(current->children[index] == nullptr) {
-                return false;
-            }
-            current = current->children[index];
-        }
-        return current->isEndOfWord;
-    }
-
-    bool startsWithDirect(string prefix) {
-        TrieNodeStruct* current = root;
-        for(char c : prefix) {
-            int index = c - 'a';
-            if(current->children[index] == nullptr) {
-                return false;
-            }
-            current = current->children[index];
-        }
-        return true;  
-    }
 };
