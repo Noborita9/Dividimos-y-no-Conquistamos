@@ -1,7 +1,7 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Template}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}C++ Template}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Fast I/O Template}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Fast Python}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Data structures}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}BIT}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}DSU}{3}{subsection.2.2}%
@@ -15,35 +15,30 @@
 \contentsline {section}{\numberline {4}Strings}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Prefix Trie}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Hashing}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}KMP}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}KMP}{6}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}LPS}{7}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Z-FUNCTION}{8}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Graph}{8}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Tarjan}{8}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Bellman Ford}{9}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}SCC}{9}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Bipartite Matching Hopcroft-Karp}{9}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Konig Theorem Min V.Cover}{10}{subsection.5.5}%
-\contentsline {subsection}{\numberline {5.6}Hungarian}{10}{subsection.5.6}%
+\contentsline {subsection}{\numberline {4.5}Z-FUNCTION}{7}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Graph}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Tarjan}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Bellman Ford}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}SCC}{8}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Bipartite Matching Hopcroft-Karp}{8}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Konig Theorem Min V.Cover}{9}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Hungarian}{9}{subsection.5.6}%
 \contentsline {subsection}{\numberline {5.7}Flow}{10}{subsection.5.7}%
-\contentsline {subsection}{\numberline {5.8}Ford Fulkerson}{12}{subsection.5.8}%
+\contentsline {subsection}{\numberline {5.8}Ford Fulkerson}{11}{subsection.5.8}%
 \contentsline {section}{\numberline {6}Math}{13}{section.6}%
-\contentsline {subsection}{\numberline {6.1}BINARY POW}{13}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}CATALAN}{14}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}COMBINATORICS}{14}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}EUCLIDEAN EXTENDED}{14}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}EULER TOTIENT}{15}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}JOSEPHUS}{15}{subsection.6.6}%
-\contentsline {subsection}{\numberline {6.7}MOBIUS}{15}{subsection.6.7}%
-\contentsline {subsection}{\numberline {6.8}NTT}{16}{subsection.6.8}%
-\contentsline {subsection}{\numberline {6.9}PRIME FACTORIZATION}{17}{subsection.6.9}%
-\contentsline {subsection}{\numberline {6.10}SIEVE}{17}{subsection.6.10}%
-\contentsline {subsection}{\numberline {6.11}fft}{17}{subsection.6.11}%
-\contentsline {section}{\numberline {7}Geometry}{20}{section.7}%
-\contentsline {subsection}{\numberline {7.1}CONVEX HULL}{20}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}OPERATIONS}{21}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}POLYGON AREA}{21}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}RAY CASTING}{21}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Trees}{21}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Centroid}{21}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}LCA}{22}{subsection.8.2}%
+\contentsline {subsection}{\numberline {6.1}Euclidean Extended}{13}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Euler Totient}{13}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Josephus}{13}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Mobius}{14}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}NTT}{14}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}FFT}{15}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Geometry}{16}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Convex Hull}{16}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}Operations}{16}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Polygon Area}{17}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Ray Casting}{17}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Trees}{17}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Centroid}{17}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}LCA}{18}{subsection.8.2}%
