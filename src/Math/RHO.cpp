@@ -1,14 +1,6 @@
 //RECOMENDADO USAR UNSIGNED LONG LONG
-ll mulmod(ll a, ll b, ll m) {
-    ll res = 0;
-    a %= m;
-    while (b > 0) {
-        if (b & 1) res = (res + a) % m;
-        a = (2LL * a) % m;
-        b >>= 1;
-    }
-    return res;
-}
+ll mulmod(ll a, ll b, ll m) { return ll(__int128(a) * b % m); }
+
 ll expmod(ll b, ll e, ll m) {
 	ll ret = 1;
 	while (e) {
