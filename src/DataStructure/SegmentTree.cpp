@@ -1,102 +1,71 @@
-struct Node {
-    long long sum = 0;
-    long long min_val = LLONG_MAX;
-    long long max_val = LLONG_MIN;
-    long long lazy = 0;
-    
-    // Merge function to combine two nodes
-    void merge(const Node& left, const Node& right) {
-        sum = left.sum + right.sum;
-        min_val = min(left.min_val, right.min_val);
-        max_val = max(left.max_val, right.max_val);
-    }
-    
-    // Update function for lazy propagation
-    void apply(int l, int r, long long value) {
-        sum += (r - l + 1) * value;
-        min_val += value;
-        max_val += value;
-        lazy += value;
-    }
+#define LC(v) (v<<1)
+#define RC(v) ((v<<1)|1)
+#define MD(L, R) (L+((R-L)>>1))
+struct node {
+    ll mx;
+    ll cant;
 };
-
-struct SegTree {
+struct ST {
+    vec<node> st;
+    vec<ll> lz;
     int n;
-    vector<Node> tree;
-    
-    SegTree(int n) : n(n) {
-        tree.resize(4 * n + 5);
+    ST(int n = 1): st(4 * n + 10, {oo, oo}), lz(4 * n + 10, 0), n(n) {
+        build(1, 0, n - 1);
     }
-    
-    SegTree(vector<int>& arr) : n(arr.size()) {
-        tree.resize(4 * n + 5);
-        build(arr, 0, 0, n-1);
+    node merge(node a, node b){
+        if (a.mx == oo) return b;
+        if (b.mx == oo) return a;
+        if (a.mx == b.mx) return {a.mx, a.cant + b.cant};
+        return {max(a.mx, b.mx), a.mx > b.mx ? a.cant : b.cant};
     }
-    
-    // Push lazy value to children
-    void push(int id, int l, int r) {
-        if (tree[id].lazy == 0) return;
-        
-        int mid = (l + r) >> 1;
-        tree[2*id + 1].apply(l, mid, tree[id].lazy);
-        tree[2*id + 2].apply(mid+1, r, tree[id].lazy);
-        tree[id].lazy = 0;
+    void build(int v, int L, int R){
+        if (L == R){
+            st[v] = {0, 1};
+        } else {
+            int m = MD(L, R);
+            build(LC(v), L, m);
+            build(RC(v), m + 1, R);
+            st[v] = merge(st[LC(v)], st[RC(v)]);
+        }
     }
-    
-    void build(vector<int>& arr, int id, int l, int r) {
-        if (l == r) {
-            tree[id].sum = arr[l];
-            tree[id].min_val = arr[l];
-            tree[id].max_val = arr[l];
+    void push(int v, int L, int R){
+        if (lz[v]){
+            if (L != R){
+                st[LC(v)].mx += lz[v];
+                st[RC(v)].mx += lz[v];
+                lz[LC(v)] += lz[v];
+                lz[RC(v)] += lz[v];
+            }
+            lz[v] = 0;
+        }
+    }
+    void update(int v, int L, int R, int ql, int qr, ll w){
+        if (ql > R || qr < L) return;
+        push(v, L, R);
+        if (ql == L && qr == R){
+            st[v].mx += w;
+            lz[v] += w;
+            push(v, L, R);
             return;
         }
-        
-        int mid = (l + r) >> 1;
-        build(arr, 2*id + 1, l, mid);
-        build(arr, 2*id + 2, mid+1, r);
-        tree[id].merge(tree[2*id + 1], tree[2*id + 2]);
+        int m = MD(L, R);
+        update(LC(v), L, m, ql, min(qr, m), w);
+        update(RC(v), m + 1, R, max(m + 1, ql), qr, w);
+        st[v] = merge(st[LC(v)], st[RC(v)]);
     }
-    
-    // Range update with lazy propagation
-    void update(int id, int l, int r, int ql, int qr, long long val) {
-        if (ql > r || qr < l) return;
-        
-        if (ql <= l && r <= qr) {
-            tree[id].apply(l, r, val);
-            return;
+    node query(int v, int L, int R, int ql, int qr){
+        if (ql > R || qr < L) return {oo, oo};
+        push(v, L, R);
+        if (ql == L && qr == R){
+            return st[v];
         }
-        
-        push(id, l, r);
-        int mid = (l + r) >> 1;
-        update(2*id + 1, l, mid, ql, qr, val);
-        update(2*id + 2, mid+1, r, ql, qr, val);
-        tree[id].merge(tree[2*id + 1], tree[2*id + 2]);
+        int m = MD(L, R);
+        return merge(query(LC(v), L, m, ql, min(m, qr)), query(RC(v), m + 1, R, max(m + 1, ql), qr));
     }
-    
-    // Range query
-    Node query(int id, int l, int r, int ql, int qr) {
-        if (ql > r || qr < l) return Node();
-        
-        if (ql <= l && r <= qr) {
-            return tree[id];
-        }
-        
-        push(id, l, r);
-        int mid = (l + r) >> 1;
-        Node left = query(2*id + 1, l, mid, ql, qr);
-        Node right = query(2*id + 2, mid+1, r, ql, qr);
-        
-        Node result;
-        result.merge(left, right);
-        return result;
+    node query(int l, int r){
+        return query(1, 0, n - 1, l, r);
     }
-    
-    // Public interface
-    void update(int l, int r, long long val) {
-        update(0, 0, n-1, l, r, val);
-    }
-    
-    Node query(int l, int r) {
-        return query(0, 0, n-1, l, r);
+    void update(int l, int r, ll w){
+        update(1, 0, n - 1, l, r, w);
     }
 };
