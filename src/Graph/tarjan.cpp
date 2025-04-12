@@ -1,10 +1,7 @@
-const int N = 10;
-
 vector<int> G[N];
 vector<int> dfs_low(N, -1), dfs_num(N, -1), ap(N, 0); // ap for Articulation Points
 int dfs_count = 0;
 int root = -1; // For AP
-
 void dfs(int u, int p = -1){
     dfs_low[u]=dfs_num[u]=dfs_count++;
     int child = 0;

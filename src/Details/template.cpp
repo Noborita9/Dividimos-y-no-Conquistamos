@@ -2,10 +2,10 @@
 using namespace std;
 
 #define LOCAL
-#define L(i, j, n) for (int i = int(j); i < (int)n; i ++)
-#define LI(i, j, n) for (int i = int(j); i <= (int)n; i ++)
-#define R(i, j, n) for (int i = int(j); i > (int)n; i --)
-#define RI(i, j, n) for (int i = int(j); i >= (int)n; i --)
+#define L(i, j, n) for (int i = (j); i < (int)n; i ++)
+#define LI(i, j, n) for (int i = (j); i <= (int)n; i ++)
+#define R(i, j, n) for (int i = (j); i > (int)n; i --)
+#define RI(i, j, n) for (int i = (j); i >= (int)n; i --)
 #define SZ(x) int((x).size())
 #define ALL(x) begin(x),end(x)
 #define IS_IN(x, v) ((x).find(v) != (x).end())
