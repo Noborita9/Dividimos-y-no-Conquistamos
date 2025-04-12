@@ -6,7 +6,7 @@ struct StrHash { // Hash polinomial con exponentes decrecientes.
 		int n = SZ(s);
 		L(k, 0, 2) {
 			hs[k].resize(n+1), bs[k].resize(n+1, 1);
-			L(i, 1, n) {
+			L(i, 0, n) {
 				hs[k][i+1] = (hs[k][i] * b + s[i]) % ms[k];
 				bs[k][i+1] =  bs[k][i] * b         % ms[k];
 			}
