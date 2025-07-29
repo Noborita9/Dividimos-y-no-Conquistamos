@@ -15,11 +15,9 @@ void dfs(int u, int p = -1){
             dfs(v, u);
             dfs_low[u] = min(dfs_low[u], dfs_low[v]);
             if (dfs_low[v] > dfs_num[u]){
-              // Bridge from u -> v
               cout << "Bridge " << u << " -> " << v << "\n";
             } 
             if (dfs_low[v] >= dfs_num[u]) {
-                // u is AP
                 ap[u] = 1;
             }
         } else dfs_low[u] = min(dfs_low[u], dfs_num[v]);

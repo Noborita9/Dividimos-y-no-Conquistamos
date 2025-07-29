@@ -3,15 +3,11 @@
 #define MD(L, R) (L+((R-L)>>1))
 struct node {
     ll mx;
-    ll cant;
-};
+    ll cant; };
 struct ST {
     vec<node> st;
-    vec<ll> lz;
-    int n;
-    ST(int n = 1): st(4 * n + 10, {oo, oo}), lz(4 * n + 10, 0), n(n) {
-        build(1, 0, n - 1);
-    }
+    vec<ll> lz; int n;
+    ST(int n = 1): st(4 * n + 10, {oo, oo}), lz(4 * n + 10, 0), n(n) {build(1, 0, n - 1);}
     node merge(node a, node b){
         if (a.mx == oo) return b;
         if (b.mx == oo) return a;
@@ -56,16 +52,10 @@ struct ST {
     node query(int v, int L, int R, int ql, int qr){
         if (ql > R || qr < L) return {oo, oo};
         push(v, L, R);
-        if (ql == L && qr == R){
-            return st[v];
-        }
+        if (ql == L && qr == R) return st[v];
         int m = MD(L, R);
         return merge(query(LC(v), L, m, ql, min(m, qr)), query(RC(v), m + 1, R, max(m + 1, ql), qr));
     }
-    node query(int l, int r){
-        return query(1, 0, n - 1, l, r);
-    }
-    void update(int l, int r, ll w){
-        update(1, 0, n - 1, l, r, w);
-    }
+    node query(int l, int r){return query(1, 0, n - 1, l, r);}
+    void update(int l, int r, ll w){update(1, 0, n - 1, l, r, w);}
 };
