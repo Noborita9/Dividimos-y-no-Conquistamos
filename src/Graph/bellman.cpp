@@ -1,15 +1,9 @@
-struct Edge {
-    int a, b, cost;
-};
-
-int n, m, v;
+struct Edge {int a, b, cost;};
 vector<Edge> edges;
-const int INF = 1000000000;
-
-void solve()
+int solve(int s) // Source
 {
     vector<int> d(n, INF);
-    d[v] = 0;
+    d[s] = 0;
     for (int i = 0; i < n - 1; ++i)
         for (Edge e : edges)
             if (d[e.a] < INF)
