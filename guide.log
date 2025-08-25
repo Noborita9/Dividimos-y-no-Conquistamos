@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  24 MAR 2025 00:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  25 AUG 2025 19:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -462,117 +462,116 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 13.
 
-(./src/Details/template.cpp
-
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+(./src/Details/template.cpp)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-(./src/Details/fast.py) (./src/Details/policy_based.cpp)
-(./src/Details/ternary.cpp
+(./src/Details/fast.py) (./src/Details/policy_based.cpp
 
-[2]) (./src/DataStructure/BIT.cpp) (./src/DataStructure/DSU.cpp
+) (./src/Search/ternary.cpp) (./src/Search/SimulatedAnnealing.cpp
 
-) (./src/DataStructure/index_compression.cpp)
-(./src/DataStructure/SparseTable.cpp
-
-[3]) (./src/DataStructure/SegmentTree.cpp
-
-
+[2]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[4]) (./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
+) (./src/DataStructure/BIT.cpp) (./src/DataStructure/BIT_2d.cpp
 
-) (./src/DP/editDistance.cpp) (./src/DP/kadane.cpp
+[3]) (./src/DataStructure/DSU.cpp) (./src/DataStructure/index_compression.cpp
 
-[5]) (./src/String/TRIE.cpp
+) (./src/DataStructure/SparseTable.cpp) (./src/DataStructure/SegmentTree.cpp
+
+[4]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+) (./src/DataStructure/SegmentTreeIterativo.cpp) (./src/Graph/bellman.cpp
+
+[5]) (./src/Graph/SCC.cpp) (./src/Graph/hopkarp.cpp
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[6] (./src/Graph/konig.cpp) (./src/Graph/hungarian.cpp
+
+) (./src/Graph/Dinic.cpp
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+) (./src/Graph/MCMF.cpp
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+) (./src/Graph/TwoSat.cpp
+
+[9]) (./src/Tree/HDL.cpp
+
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[10] (./src/Tree/Centroid.cpp) (./src/Tree/LCA_log.cpp
+
+) (./src/Tree/LCA_const.cpp
+
+[11]) (./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
+
+) (./src/DP/editDistance.cpp
+
+[12]) (./src/DP/kadane.cpp) (./src/String/TRIE.cpp
 
 ) (./src/String/HASHING.cpp
 
-[6]) (./src/String/KMP.cpp
+[13]) (./src/String/KMP.cpp
 
-) (./src/String/LPS.cpp) (./src/String/Z_FUNCTION.cpp)
-
-[7] (./src/Graph/tarjan.cpp) (./src/Graph/bellman.cpp
-
-) (./src/Graph/SCC.cpp) (./src/Graph/hopkarp.cpp
-
-[8]) (./src/Graph/konig.cpp
-
-) (./src/Graph/hungarian.cpp
-
-[9]) (./src/Graph/Flow.cpp
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
+) (./src/String/LPS.cpp)
+Underfull \vbox (badness 4556) has occurred while \output is active []
 
 
 
-[10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[14] (./src/String/Z_FUNCTION.cpp) (./src/String/AhoCorasick.cpp
 
+) (./src/Math/EUCLIDEAN_EXTENDED.cpp
 
+[15]) (./src/Math/EULER_TOTIENT.cpp
 
+) (./src/Math/JOSEPHUS.cpp)
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[16] (./src/Math/MOBIUS.cpp)
 
+(./src/Math/NTT.cpp
 
-
-[11]) (./src/Graph/fordFulkerson.cpp
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[12]) (./src/Math/EUCLIDEAN_EXTENDED.cpp
-
-) (./src/Math/EULER_TOTIENT.cpp
-
-[13]) (./src/Math/JOSEPHUS.cpp
-
-) (./src/Math/MOBIUS.cpp
-
-[14]) (./src/Math/NTT.cpp
+[17]) (./src/Math/fft.cpp
 
 )
-
-[15] (./src/Math/fft.cpp
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-) (./src/Math/RHO.cpp
+[18] (./src/Math/RHO.cpp
 
-[16]) (./src/Math/SIMPSON.cpp
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[19]) (./src/Math/SIMPSON.cpp
 
 ) (./src/Geometry/CONVEX_HULL.cpp
 
-[17]) (./src/Geometry/OPERATIONS.cpp) (./src/Geometry/POLYGON_AREA.cpp
+[20]) (./src/Geometry/OPERATIONS.cpp) (./src/Geometry/POLYGON_AREA.cpp
 
-) (./src/Geometry/RAY_CASTING.cpp
-
-[18]) (./src/Tree/Centroid.cpp
-
-) (./src/Tree/LCA.cpp
-
-[19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[20]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-)
+) (./src/Geometry/RAY_CASTING.cpp)
 
 [21] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
@@ -582,26 +581,26 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: 2557D8B84E0DD1F83FFF630C0C4A41D9;5023.
+(rerunfilecheck)             Checksum: 945308D01174BDB97286CA55F2EDF2F7;6127.
  ) 
 Here is how much of TeX's memory you used:
- 16499 strings out of 473190
- 249456 string characters out of 5715800
- 1565140 words of memory out of 5000000
- 37812 multiletter control sequences out of 15000+600000
+ 16854 strings out of 473190
+ 254270 string characters out of 5715800
+ 1559138 words of memory out of 5000000
+ 38129 multiletter control sequences out of 15000+600000
  563294 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,82p,292b,2212s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,12n,82p,292b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on guide.pdf (21 pages, 225947 bytes).
+Output written on guide.pdf (21 pages, 232001 bytes).
 PDF statistics:
- 2309 PDF objects out of 2487 (max. 8388607)
- 2251 compressed objects within 23 object streams
- 1635 named destinations out of 1728 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2355 PDF objects out of 2487 (max. 8388607)
+ 2297 compressed objects within 23 object streams
+ 1654 named destinations out of 1728 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

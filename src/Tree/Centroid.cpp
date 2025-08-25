@@ -15,8 +15,6 @@ int centroid(int u, int p, int tz){
 int build(int u){
     int c = centroid(u, -1, getSize(u, -1));
     removed[c] = 1;
-    for (int v: G[c]) if (!removed[v]) {
-        build(v);
-    }
+    for (int v: G[c]) if (!removed[v]) { build(v); }
     return c;
 }

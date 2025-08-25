@@ -19,21 +19,55 @@
 
 \section{Search}
 \subsection{Ternary}
-\cppfile{src/Details/ternary.cpp}
+\cppfile{src/Search/ternary.cpp}
+\subsection{Simulated Annealing}
+\cppfile{src/Search/SimulatedAnnealing.cpp}
 
-\section{Data structures}
+\section{Data structures} % TODO: Add Chull Trick
 \subsection{BIT}
 \cppfile{src/DataStructure/BIT.cpp}
+\subsection{BIT - 2D}
+\cppfile{src/DataStructure/BIT_2d.cpp}
 \subsection{DSU}
-\cppfile{src/DataStructure/DSU.cpp}
+\cppfile{src/DataStructure/DSU.cpp} % TODO: ADD DSU Rollback
 \subsection{Index Compession}
 \cppfile{src/DataStructure/index_compression.cpp}
 \subsection{Sparse Table}
 \cppfile{src/DataStructure/SparseTable.cpp}
 \subsection{Segment tree}
 \cppfile{src/DataStructure/SegmentTree.cpp}
+\subsection{Segment Tree Iterativo}
+\cppfile{src/DataStructure/SegmentTreeIterativo.cpp}
 
-\section{Dynamic Programming}
+\section{Graph} % TODO: Add Euler tour
+\subsection{Bellman Ford}
+\cppfile{src/Graph/bellman.cpp}
+\subsection{SCC}
+\cppfile{src/Graph/SCC.cpp}
+\subsection{Bipartite Matching Hopcroft-Karp}
+\cppfile{src/Graph/hopkarp.cpp}
+\subsection{Konig Theorem Min V.Cover}
+\cppfile{src/Graph/konig.cpp} % TODO: Update Konig
+\subsection{Hungarian}
+\cppfile{src/Graph/hungarian.cpp}
+\subsection{Flow - Dinics}
+\cppfile{src/Graph/Dinic.cpp}
+\subsection{Flow - MinCostMaxFlow}
+\cppfile{src/Graph/MCMF.cpp}
+\subsection{2 Sat}
+\cppfile{src/Graph/TwoSat.cpp}
+
+\section{Trees}
+\subsection{Heavy Light Decomposition}
+\cppfile{src/Tree/HDL.cpp}
+\subsection{Centroid}
+\cppfile{src/Tree/Centroid.cpp}
+\subsection{LCA - Binary exponentiation}
+\cppfile{src/Tree/LCA_log.cpp}
+\subsection{LCA - Const Time}
+\cppfile{src/Tree/LCA_const.cpp}
+
+\section{Dynamic Programming} % TODO: Add Optimizations like coin change log
 \subsection{Knapsack}
 \cppfile{src/DP/knapsack.cpp}
 \subsection{LIS}
@@ -54,26 +88,8 @@
 \cppfile{src/String/LPS.cpp}
 \subsection{Z-FUNCTION}
 \cppfile{src/String/Z_FUNCTION.cpp}
-
-\section{Graph}
-\subsection{Dijkstra}
-\cppfile{src/Graph/dijkstra.cpp}
-\subsection{Tarjan}
-\cppfile{src/Graph/tarjan.cpp}
-\subsection{Bellman Ford}
-\cppfile{src/Graph/bellman.cpp}
-\subsection{SCC}
-\cppfile{src/Graph/SCC.cpp} % TODO: Add Kosaraju
-\subsection{Bipartite Matching Hopcroft-Karp}
-\cppfile{src/Graph/hopkarp.cpp}
-\subsection{Konig Theorem Min V.Cover}
-\cppfile{src/Graph/konig.cpp}
-\subsection{Hungarian}
-\cppfile{src/Graph/hungarian.cpp}
-\subsection{Flow}
-\cppfile{src/Graph/Flow.cpp}
-\subsection{Ford Fulkerson}
-\cppfile{src/Graph/fordFulkerson.cpp}
+\subsection{Aho-Corasick}
+\cppfile{src/String/AhoCorasick.cpp}
 
 \section{Math}
 \subsection{Euclidean Extended}
@@ -103,12 +119,7 @@
 \subsection{Ray Casting}
 \cppfile{src/Geometry/RAY_CASTING.cpp}
 
-\section{Trees}
-\subsection{Centroid}
-\cppfile{src/Tree/Centroid.cpp}
-\subsection{LCA}
-\cppfile{src/Tree/LCA.cpp}
-
+% TODO: Add LCA_const
 % \section{Graphs}
 % \subsection{Topological sort}
 % \cppfile{graphs/toposort.cpp}

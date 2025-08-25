@@ -1,12 +1,8 @@
 struct LCA {
-    vec<int> depth;
-    vec<vec<int>> g;
+    vec<int> depth, in, euler;
+    vec<vec<int>> g, st;
     int K, n;
-    vec<vec<int>> st;
-    inline int Min(int i, int j) {
-        return depth[i] <= depth[j] ? i : j;
-    }
-    vec<int> in, euler;
+    inline int Min(int i, int j) {return depth[i] <= depth[j] ? i : j;}
     void dfs(int u, int p) {
         in[u] = SZ(euler);
         euler.pb(u);
@@ -16,12 +12,8 @@ struct LCA {
             euler.pb(u);
         }
     }
-    LCA(int n_): depth(n_), g(vec<vec<int>>(n_)), K(0), n(n_), in(n_) {
-        euler.reserve(2 * n);
-    }
-    void add_edge(int u, int v) {
-        g[u].pb(v);
-    }
+    LCA(int n_): depth(n_), g(vec<vec<int>>(n_)), K(0), n(n_), in(n_) { euler.reserve(2 * n); }
+    void add_edge(int u, int v) {g[u].pb(v);}
     void build(int root){
         dfs(root, -1);
         int ln = SZ(euler);
@@ -29,9 +21,8 @@ struct LCA {
         st = vec<vec<int>> (K, vec<int>(ln));
         L(i,0,ln) st[0][i] = euler[i];
         for (int i = 1; (1 << i) <= ln; i ++) {
-            int jmp = (1 << (i - 1));
             for (int j = 0; j + (1<<i) <= ln; j ++) {
-                st[i][j] = Min(st[i-1][j], st[i-1][j + jmp]);
+                st[i][j] = Min(st[i-1][j], st[i-1][j + (1<<(i-1))]);
             }
         }
     }
