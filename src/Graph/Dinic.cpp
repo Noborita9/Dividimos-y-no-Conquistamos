@@ -7,12 +7,10 @@ struct Dinic {
 		edge(int to_, int cap_, int rev_, bool res_)
 			: to(to_), cap(cap_), rev(rev_), flow(0), res(res_) {}
 	};
- 
 	vec<vec<edge>> g;
 	vec<int> lev, beg;
 	ll F;
 	Dinic(int n) : g(n), F(0) {}
- 
 	void add(int a, int b, int c) {
 		g[a].emplace_back(b, c, g[b].size(), false);
 		g[b].emplace_back(a, 0, g[a].size()-1, true);
@@ -50,7 +48,6 @@ struct Dinic {
 		return F;
 	}
 };
-
 vector<pair<int, int>> get_cut(Dinic& g, int s, int t) {
 	g.max_flow(s, t);
 	vector<pair<int, int>> cut;

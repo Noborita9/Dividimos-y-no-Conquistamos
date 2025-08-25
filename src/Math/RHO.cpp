@@ -13,7 +13,7 @@ static inline ll powmod(ll b, ll e, ll m) {
     return r;
 }
  
-// RNG rápido
+// RNG rapido
 static inline ll splitmix64(ll x) {
     x += 0x9e3779b97f4a7c15ULL;
     x = (x ^ (x >> 30)) * 0xbf58476d1ce4e5b9ULL;
@@ -23,7 +23,7 @@ static inline ll splitmix64(ll x) {
 static ll rng_state = 0x1234567890abcdefULL ^ chrono::high_resolution_clock::now().time_since_epoch().count();
 static inline ll rnd() { return splitmix64(rng_state += 0x9e3779b97f4a7c15ULL); }
  
-// trial division pequeña para acelerar
+// trial division pequena para acelerar
 static const int SMALL_P_MAX = 1000;
 static vector<int> small_primes;
  
@@ -37,13 +37,13 @@ static void sieve_small() {
  
     bool isPrime(ll n) {
     if (n < 2) return false;
-    // divide por primos pequeños
+    // divide por primos pequenos
     for (int p : small_primes) {
         if ((ll)p * (ll)p > n) break;
         if (n % p == (ll)0) return n == (ll)p;
     }
     if (n < 4) return true; // 2,3
-    // Miller–Rabin determinístico para 64-bit
+    // Miller-Rabin deterministico para 64-bit
     ll d = n - 1, s = 0;
     while ((d & 1) == 0) d >>= 1, ++s;
     auto witness = [&](ll a) -> bool {
@@ -73,7 +73,7 @@ ll pollard_rho(ll n) {
         ll x = (rnd() % (n - 2)) + 2; // [2..n-1]
         ll y = x;
         ll d = 1;
-        // límite de iteraciones para evitar lazos raros
+        // limite de iteraciones para evitar lazos raros
         for (int it = 0; it < 1'000'000 && d == 1; ++it) {
             x = (mulmod(x, x, n) + c) % n;
             y = (mulmod(y, y, n) + c) % n;

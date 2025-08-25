@@ -6,8 +6,10 @@ using namespace std;
 #define ALL(x) begin(x),end(x)
 #define vec vector
 #define pb push_back
+#define eb emplace_back
 
 using ll = long long;
+using ld = long double;
 
 void solve()
 {
