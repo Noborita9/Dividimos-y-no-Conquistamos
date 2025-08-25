@@ -46,4 +46,18 @@ struct hopcroft_karp {
 		}
 		return ret;
 	}
+	vec<int> cover[2]; // if cover[i][j] = 1 -> node i, j is part of cover
+	int konig() {
+		cover[0].assign(n,true); // n left size
+		cover[1].assign(m,false); // m right size
+		auto go = [&](auto&& me, int u) -> void {
+			cover[0][u] = false;
+			for (auto v : g[u]) if (!cover[1][v]) {
+				cover[1][v] = true;
+				me(me,mb[v]);
+			}
+		};
+		L(u,0,n) if (ma[u] < 0) go(go,u);
+		return size;
+	}
 };

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  25 AUG 2025 19:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  25 AUG 2025 20:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -490,12 +490,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [5]) (./src/Graph/SCC.cpp) (./src/Graph/hopkarp.cpp
 
-)
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[6] (./src/Graph/konig.cpp) (./src/Graph/hungarian.cpp
+[6]) (./src/Graph/hungarian.cpp
 
 ) (./src/Graph/Dinic.cpp
 
@@ -521,9 +521,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) (./src/Tree/LCA_log.cpp
 
-[11]) (./src/Tree/LCA_const.cpp
+[11]) (./src/Tree/LCA_const.cpp)
+Underfull \vbox (badness 4556) has occurred while \output is active []
 
-) (./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
+
+
+(./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
 
 [12]) (./src/DP/editDistance.cpp) (./src/DP/kadane.cpp
 
@@ -531,10 +534,9 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [13]) (./src/String/HASHING.cpp
 
-) (./src/String/KMP.cpp
+) (./src/String/KMP.cpp) (./src/String/LPS.cpp
 
-[14]) (./src/String/LPS.cpp) (./src/String/Z_FUNCTION.cpp)
-(./src/String/AhoCorasick.cpp
+[14]) (./src/String/Z_FUNCTION.cpp) (./src/String/AhoCorasick.cpp
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -588,26 +590,26 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: 516A6031B207EFE2C6DC307D1CA90BFA;6238.
+(rerunfilecheck)             Checksum: 9687B454100382348F09A658A1950CEB;6120.
  ) 
 Here is how much of TeX's memory you used:
- 16896 strings out of 473190
- 254952 string characters out of 5715800
- 1558138 words of memory out of 5000000
- 38138 multiletter control sequences out of 15000+600000
+ 16874 strings out of 473190
+ 254666 string characters out of 5715800
+ 1560138 words of memory out of 5000000
+ 38122 multiletter control sequences out of 15000+600000
  563294 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,82p,292b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 80i,12n,82p,343b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on guide.pdf (22 pages, 236076 bytes).
+Output written on guide.pdf (22 pages, 235951 bytes).
 PDF statistics:
- 2400 PDF objects out of 2487 (max. 8388607)
- 2340 compressed objects within 24 object streams
- 1684 named destinations out of 1728 (max. 500000)
- 449 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2393 PDF objects out of 2487 (max. 8388607)
+ 2333 compressed objects within 24 object streams
+ 1681 named destinations out of 1728 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 

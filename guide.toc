@@ -17,13 +17,12 @@
 \contentsline {section}{\numberline {4}Graph}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Bellman Ford}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}SCC}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Bipartite Matching Hopcroft-Karp}{6}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Konig Theorem Min V.Cover}{7}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Hungarian}{7}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Flow - Dinics}{7}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Flow - MinCostMaxFlow}{8}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}2 Sat}{9}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Euler Tour}{10}{subsection.4.9}%
+\contentsline {subsection}{\numberline {4.3}Bipartite Matching Hopcroft-Karp - With Konig}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Hungarian}{7}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Flow - Dinics}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Flow - MinCostMaxFlow}{8}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}2 Sat}{9}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Euler Tour}{10}{subsection.4.8}%
 \contentsline {section}{\numberline {5}Trees}{10}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Heavy Light Decomposition}{10}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Centroid}{11}{subsection.5.2}%
@@ -38,7 +37,7 @@
 \contentsline {subsection}{\numberline {7.1}Prefix Trie}{13}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Hashing}{14}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}KMP}{14}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}LPS}{15}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.4}LPS}{14}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Z-FUNCTION}{15}{subsection.7.5}%
 \contentsline {subsection}{\numberline {7.6}Aho-Corasick}{15}{subsection.7.6}%
 \contentsline {section}{\numberline {8}Math}{16}{section.8}%
