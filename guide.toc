@@ -35,22 +35,22 @@
 \contentsline {subsection}{\numberline {6.4}Kadane}{13}{subsection.6.4}%
 \contentsline {section}{\numberline {7}Strings}{13}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Prefix Trie}{13}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Hashing}{14}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Hashing}{13}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}KMP}{14}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}LPS}{14}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Z-FUNCTION}{15}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.5}Z-FUNCTION}{14}{subsection.7.5}%
 \contentsline {subsection}{\numberline {7.6}Aho-Corasick}{15}{subsection.7.6}%
-\contentsline {section}{\numberline {8}Math}{16}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Euclidean Extended}{16}{subsection.8.1}%
+\contentsline {section}{\numberline {8}Math}{15}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Euclidean Extended}{15}{subsection.8.1}%
 \contentsline {subsection}{\numberline {8.2}Euler Totient}{16}{subsection.8.2}%
 \contentsline {subsection}{\numberline {8.3}Josephus}{16}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Mobius}{17}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.4}Mobius}{16}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}NTT}{17}{subsection.8.5}%
 \contentsline {subsection}{\numberline {8.6}FFT}{18}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Rho}{19}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.7}Rho}{18}{subsection.8.7}%
 \contentsline {subsection}{\numberline {8.8}Simpson}{20}{subsection.8.8}%
 \contentsline {section}{\numberline {9}Geometry}{20}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Convex Hull}{20}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Operations}{21}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.2}Operations}{20}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Polygon Area}{21}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Ray Casting}{22}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Ray Casting}{21}{subsection.9.4}%

@@ -1,11 +1,4 @@
-#include <iostream>
-#include <vector>
-using namespace std;
-
-typedef long long ll;
 typedef pair<ll, ll> Point;
-
-
 bool is_point_in_polygon(const vector<Point>& polygon, Point p) {
     bool inside = false;
     int n = polygon.size();

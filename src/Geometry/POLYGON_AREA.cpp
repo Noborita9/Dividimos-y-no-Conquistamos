@@ -1,12 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <cmath>
-using namespace std;
-
-typedef long long ll;
 typedef pair<ll, ll> Point;
-
-
 double polygon_area(const vector<Point>& polygon) {
     ll area = 0;
     int n = polygon.size();

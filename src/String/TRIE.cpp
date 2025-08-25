@@ -1,35 +1,18 @@
-#include <bits/stdc++.h>
-
-using namespace std;
-
-struct TrieNodeStruct {
-    TrieNodeStruct* children[26];
-    bool isEndOfWord;
-    
-    TrieNodeStruct() {
-        isEndOfWord = false;
-        for(int i = 0; i < 26; i++) {
-            children[i] = nullptr;
-        }
-    }
+struct Trie {
+    map<char, int> ch;
+    bool eee;
+    Trie(): eee(0) {} 
 };
-
-struct TrieStruct {
-    TrieNodeStruct* root;
-    
-    TrieStruct() {
-        root = new TrieNodeStruct();
-    }
-    
-    void insert(string word) {
-        TrieNodeStruct* current = root;
-        for(char c : word) {
-            int index = c - 'a';
-            if(current->children[index] == nullptr) {
-                current->children[index] = new TrieNodeStruct();
-            }
-            current = current->children[index];
+vec<Trie> t;
+void initTrie(){t.clear();t.pb(Trie());}
+void insert(string &word) {
+    int v = 0;
+    for(char c : word) {
+        if(!t[v].ch[c]) {
+            t[v].ch[c] = SZ(t);
+            t.pb(Trie());
         }
-        current->isEndOfWord = true;
+        v = t[v].ch[c];
     }
-};
+    t[v].eee = 1;
+}

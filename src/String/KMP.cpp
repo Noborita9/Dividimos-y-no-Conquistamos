@@ -1,13 +1,10 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-vector<int> kmp(string pat, string sec){ //geeks4geeks implementation with some changes
+vec<int> kmp(string pat, string sec){ //geeks4geeks implementation with some changes
   int m = pat.length();
   int n = sec.length();
   cout << m << " " << n << endl; 
 
-  vector<int> lps = getLps(pat);
-  vector<int> res;
+  vec<int> lps = getLps(pat);
+  vec<int> res;
 
   int i = 0;
   int j = 0;

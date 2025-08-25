@@ -1,8 +1,5 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-vector<int> getLps(string pat){ //geek4geeks implementatio with some changes
-  vector<int> lps(pat.length(), 0);
+vec<int> getLps(string pat){ //geek4geeks implementatio with some changes
+  vec<int> lps(pat.length(), 0);
   int len = 0;
   int i = 1;
   lps[0] = 0;
@@ -18,6 +15,5 @@ vector<int> getLps(string pat){ //geek4geeks implementatio with some changes
       i++;
     }
   }
-
   return lps;
 }
