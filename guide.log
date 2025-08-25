@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  25 AUG 2025 19:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  25 AUG 2025 19:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -513,67 +513,74 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) (./src/Graph/TwoSat.cpp
 
-[9]) (./src/Tree/HDL.cpp
+[9]) (./src/Graph/EulerTour.cpp
+
+) (./src/Tree/HDL.cpp
+
+[10]) (./src/Tree/Centroid.cpp
+
+) (./src/Tree/LCA_log.cpp
+
+[11]) (./src/Tree/LCA_const.cpp
+
+) (./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
+
+[12]) (./src/DP/editDistance.cpp) (./src/DP/kadane.cpp
+
+) (./src/String/TRIE.cpp
+
+[13]) (./src/String/HASHING.cpp
+
+) (./src/String/KMP.cpp
+
+[14]) (./src/String/LPS.cpp) (./src/String/Z_FUNCTION.cpp)
+(./src/String/AhoCorasick.cpp
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[10] (./src/Tree/Centroid.cpp) (./src/Tree/LCA_log.cpp
+[15] (./src/Math/EUCLIDEAN_EXTENDED.cpp
 
-) (./src/Tree/LCA_const.cpp
+) (./src/Math/EULER_TOTIENT.cpp) (./src/Math/JOSEPHUS.cpp
 
-[11]) (./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
+[16]) (./src/Math/MOBIUS.cpp
 
-) (./src/DP/editDistance.cpp
+) (./src/Math/NTT.cpp
 
-[12]) (./src/DP/kadane.cpp) (./src/String/TRIE.cpp
-
-) (./src/String/HASHING.cpp
-
-[13]) (./src/String/KMP.cpp
-
-) (./src/String/LPS.cpp)
-Underfull \vbox (badness 4556) has occurred while \output is active []
-
-
-
-[14] (./src/String/Z_FUNCTION.cpp) (./src/String/AhoCorasick.cpp
-
-) (./src/Math/EUCLIDEAN_EXTENDED.cpp
-
-[15]) (./src/Math/EULER_TOTIENT.cpp
-
-) (./src/Math/JOSEPHUS.cpp)
-
-[16] (./src/Math/MOBIUS.cpp)
-
-(./src/Math/NTT.cpp
-
-[17]) (./src/Math/fft.cpp
-
-)
+[17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[18] (./src/Math/RHO.cpp
+) (./src/Math/fft.cpp
+
+[18]) (./src/Math/RHO.cpp
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[19]) (./src/Math/SIMPSON.cpp
+[19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) (./src/Geometry/CONVEX_HULL.cpp
 
-[20]) (./src/Geometry/OPERATIONS.cpp) (./src/Geometry/POLYGON_AREA.cpp
 
-) (./src/Geometry/RAY_CASTING.cpp)
+) (./src/Math/SIMPSON.cpp) (./src/Geometry/CONVEX_HULL.cpp
 
-[21] 
+[20]) (./src/Geometry/OPERATIONS.cpp
+
+) (./src/Geometry/POLYGON_AREA.cpp
+
+[21]) (./src/Geometry/RAY_CASTING.cpp)
+
+
+
+[22
+
+] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./guide.aux)
  ***********
@@ -581,13 +588,13 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: 945308D01174BDB97286CA55F2EDF2F7;6127.
+(rerunfilecheck)             Checksum: 516A6031B207EFE2C6DC307D1CA90BFA;6238.
  ) 
 Here is how much of TeX's memory you used:
- 16854 strings out of 473190
- 254270 string characters out of 5715800
- 1559138 words of memory out of 5000000
- 38129 multiletter control sequences out of 15000+600000
+ 16896 strings out of 473190
+ 254952 string characters out of 5715800
+ 1558138 words of memory out of 5000000
+ 38138 multiletter control sequences out of 15000+600000
  563294 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,82p,292b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -597,10 +604,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on guide.pdf (21 pages, 232001 bytes).
+Output written on guide.pdf (22 pages, 236076 bytes).
 PDF statistics:
- 2355 PDF objects out of 2487 (max. 8388607)
- 2297 compressed objects within 23 object streams
- 1654 named destinations out of 1728 (max. 500000)
- 441 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2400 PDF objects out of 2487 (max. 8388607)
+ 2340 compressed objects within 24 object streams
+ 1684 named destinations out of 1728 (max. 500000)
+ 449 words of extra memory for PDF output out of 10000 (max. 10000000)
 
