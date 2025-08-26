@@ -12,7 +12,7 @@ struct STI {
         st[pos] += w;
         while((pos>>=1) > 0) st[pos] = st[pos * 2] + st[pos * 2 + 1];
     }
-    ll query(int l, int r) {
+    ll query(int l, int r) { // [l, r) 
         ll res = 0;
         l += K; r += K;
         while (l < r) {
