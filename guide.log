@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  25 AUG 2025 20:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  26 AUG 2025 11:06
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -470,12 +470,12 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 
 ) (./src/Search/ternary.cpp) (./src/Search/SimulatedAnnealing.cpp
 
-[2]
+[2])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-) (./src/DataStructure/BIT.cpp) (./src/DataStructure/BIT_2d.cpp
+(./src/DataStructure/BIT.cpp) (./src/DataStructure/BIT_2d.cpp
 
 [3]) (./src/DataStructure/DSU.cpp) (./src/DataStructure/index_compression.cpp
 
@@ -519,10 +519,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [10]) (./src/Tree/Centroid.cpp
 
-) (./src/Tree/LCA_log.cpp
+) (./src/Tree/LCA_log.cpp)
 
-[11]) (./src/Tree/LCA_const.cpp)
-Underfull \vbox (badness 4556) has occurred while \output is active []
+[11] (./src/Tree/LCA_const.cpp)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
@@ -540,9 +540,9 @@ Underfull \vbox (badness 4556) has occurred while \output is active []
 
 ) (./src/Math/EUCLIDEAN_EXTENDED.cpp
 
-[15]) (./src/Math/EULER_TOTIENT.cpp
+[15]) (./src/Math/EULER_TOTIENT.cpp)
 
-) (./src/Math/JOSEPHUS.cpp) (./src/Math/MOBIUS.cpp
+(./src/Math/JOSEPHUS.cpp) (./src/Math/MOBIUS.cpp
 
 [16]) (./src/Math/NTT.cpp
 
@@ -584,10 +584,10 @@ Package rerunfilecheck Info: File `guide.out' has not changed.
 (rerunfilecheck)             Checksum: 9687B454100382348F09A658A1950CEB;6120.
  ) 
 Here is how much of TeX's memory you used:
- 16797 strings out of 473190
- 253423 string characters out of 5715800
- 1560138 words of memory out of 5000000
- 38111 multiletter control sequences out of 15000+600000
+ 16788 strings out of 473190
+ 253311 string characters out of 5715800
+ 1561048 words of memory out of 5000000
+ 38108 multiletter control sequences out of 15000+600000
  563294 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,82p,343b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -597,10 +597,10 @@ Here is how much of TeX's memory you used:
 usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr
 /local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
 local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on guide.pdf (21 pages, 230683 bytes).
+Output written on guide.pdf (21 pages, 230676 bytes).
 PDF statistics:
- 2309 PDF objects out of 2487 (max. 8388607)
- 2251 compressed objects within 23 object streams
- 1615 named destinations out of 1728 (max. 500000)
+ 2302 PDF objects out of 2487 (max. 8388607)
+ 2244 compressed objects within 23 object streams
+ 1609 named destinations out of 1728 (max. 500000)
  441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
