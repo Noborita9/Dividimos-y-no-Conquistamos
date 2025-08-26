@@ -1,8 +1,8 @@
 mt19937 rng((int) chrono::steady_clock::now().time_since_epoch().count());
 struct hopcroft_karp {
 	int n, m; // n is Left Partition Size, m is Right Partition Size
-	vector<vector<int>> g;
-	vector<int> dist, nxt, ma, mb;
+	vec<vec<int>> g;
+	vec<int> dist, nxt, ma, mb;
 	hopcroft_karp(int n_, int m_) : n(n_), m(m_), g(n),
 		dist(n), nxt(n), ma(n, -1), mb(m, -1) {}
 	void add(int a, int b) { g[a].pb(b); }
@@ -48,8 +48,8 @@ struct hopcroft_karp {
 	}
 	vec<int> cover[2]; // if cover[i][j] = 1 -> node i, j is part of cover
 	int konig() {
-		cover[0].assign(n,true); // n left size
-		cover[1].assign(m,false); // m right size
+		cover[0].assign(n,1); // n left size
+		cover[1].assign(m,0); // m right size
 		auto go = [&](auto&& me, int u) -> void {
 			cover[0][u] = false;
 			for (auto v : g[u]) if (!cover[1][v]) {

@@ -3,14 +3,14 @@ struct ACvertex {
 	map<char,int> next,go;
 	int p,link;
 	char pch;
-	vector<int> leaf;
+	vec<int> leaf;
 	ACACvertex(int p=-1, char pch=-1):p(p),pch(pch),link(-1){}
 };
-vector<ACvertex> t;
+vec<ACvertex> t;
 void aho_init(){ //do not forget!!
 	t.clear();t.pb(ACvertex());
 }
-void add_string(string s, int id){
+void add_string(string &s, int id){
 	int v=0;
 	for(char c:s){
 		if(!t[v].next.count(c)){

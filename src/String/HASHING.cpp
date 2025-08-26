@@ -1,7 +1,7 @@
 static constexpr ll ms[] = {1'000'000'007, 1'000'000'403};
 static constexpr ll b = 500'000'000;
 struct StrHash { // Hash polinomial con exponentes decrecientes.
-	vector<ll> hs[2], bs[2];
+	vec<ll> hs[2], bs[2];
 	StrHash(string const& s) {
 		int n = SZ(s);
 		L(k, 0, 2) {
@@ -22,7 +22,7 @@ struct StrHash { // Hash polinomial con exponentes decrecientes.
 	}
 };
 
-pll union_hash(vector<pll> hs, vector<ll> lens){ //use arrays makes it slower
+pll union_hash(vec<pll> hs, vec<ll> lens){ //use arrays makes it slower
 	ll len = 0;
 	for(int i = hs.size()-1; i > 0; i--){
 		len += lens[i];

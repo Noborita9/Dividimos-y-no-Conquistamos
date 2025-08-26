@@ -27,8 +27,8 @@ struct ST {
     void push(int v, int L, int R){
         if (lz[v]){
             if (L != R){
-                st[LC(v)].mx += lz[v];
-                st[RC(v)].mx += lz[v];
+                st[LC(v)].mx += lz[v]; // Apply to left
+                st[RC(v)].mx += lz[v]; // And right
                 lz[LC(v)] += lz[v];
                 lz[RC(v)] += lz[v];
             }

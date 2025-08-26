@@ -10,7 +10,7 @@ void add_edge(int a, int b){
 //    g[b].push_front(edge(a));auto ib=g[b].begin();
 //    ia->rev=ib;ib->rev=ia;
 }
-vector<int> p;
+vec<int> p;
 void go(int x){
     while(g[x].size()){
         int y=g[x].front().y;
@@ -20,7 +20,7 @@ void go(int x){
     }
     p.push_back(x);
 }
-vector<int> get_path(int x){ // get a path that begins in x
+vec<int> get_path(int x){ // get a path that begins in x
 // check that a path exists from x before calling to get_path!
     p.clear();go(x);reverse(p.begin(),p.end());
     return p;

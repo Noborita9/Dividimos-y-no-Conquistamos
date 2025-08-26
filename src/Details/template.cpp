@@ -11,18 +11,13 @@ using namespace std;
 using ll = long long;
 using ld = long double;
 
-void solve()
-{
-}
+void solve(){}
 
-
-int main()
-{
+int main(){
     ios::sync_with_stdio(0);cin.tie(0);
     int TT = 1;
     //cin >> TT;
-    while (TT--)
-    {
+    while (TT--) {
         solve();
     }
 }

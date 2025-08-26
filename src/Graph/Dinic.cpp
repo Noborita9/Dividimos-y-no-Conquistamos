@@ -48,10 +48,10 @@ struct Dinic {
 		return F;
 	}
 };
-vector<pair<int, int>> get_cut(Dinic& g, int s, int t) {
+vec<pair<int, int>> get_cut(Dinic& g, int s, int t) {
 	g.max_flow(s, t);
-	vector<pair<int, int>> cut;
-	vector<int> vis(g.g.size(), 0), st = {s};
+	vec<pair<int, int>> cut;
+	vec<int> vis(g.g.size(), 0), st = {s};
 	vis[s] = 1;
 	while (st.size()) {
 		int u = st.back(); st.pop_back();

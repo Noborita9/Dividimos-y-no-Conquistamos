@@ -9,10 +9,10 @@ template<typename T> struct mcmf {
 		edge(int to_, int rev_, int flow_, int cap_, T cost_, bool res_)
 			: to(to_), rev(rev_), flow(flow_), cap(cap_), res(res_), cost(cost_) {}
 	};
-	vector<vector<edge>> g;
-	vector<int> par_idx, par;
+	vec<vec<edge>> g;
+	vec<int> par_idx, par;
 	T inf;
-	vector<T> dist;
+	vec<T> dist;
 	mcmf(int n) : g(n), par_idx(n), par(n), inf(numeric_limits<T>::max()/3) {}
 	void add(int u, int v, int w, T cost) { // de u pra v com cap w e custo cost
 		edge a = edge(v, g[v].size(), 0, w, cost, false);
@@ -20,10 +20,10 @@ template<typename T> struct mcmf {
 		g[u].push_back(a);
 		g[v].push_back(b);
 	}
-	vector<T> spfa(int s) { // nao precisa se nao tiver custo negativo
+	vec<T> spfa(int s) { // nao precisa se nao tiver custo negativo
 		deque<int> q;
-		vector<bool> is_inside(g.size(), 0);
-		dist = vector<T>(g.size(), inf);
+		vec<bool> is_inside(g.size(), 0);
+		dist = vec<T>(g.size(), inf);
 		dist[s] = 0;
 		q.push_back(s);
 		is_inside[s] = true;
@@ -45,9 +45,9 @@ template<typename T> struct mcmf {
 		}
 		return dist;
 	}
-	bool dijkstra(int s, int t, vector<T>& pot) {
-		priority_queue<pair<T, int>, vector<pair<T, int>>, greater<>> q;
-		dist = vector<T>(g.size(), inf);
+	bool dijkstra(int s, int t, vec<T>& pot) {
+		priority_queue<pair<T, int>, vec<pair<T, int>>, greater<>> q;
+		dist = vec<T>(g.size(), inf);
 		dist[s] = 0;
 		q.emplace(0, s);
 		while (q.size()) {
@@ -67,7 +67,7 @@ template<typename T> struct mcmf {
 		return dist[t] < inf;
 	}
 	pair<int, T> min_cost_flow(int s, int t, int flow = (int)1e9) {
-		vector<T> pot(g.size(), 0);
+		vec<T> pot(g.size(), 0);
 		pot = spfa(s); // mudar algoritmo de caminho minimo aqui
 		int f = 0;
 		T ret = 0;
@@ -92,8 +92,8 @@ template<typename T> struct mcmf {
 		return make_pair(f, ret);
 	}
 	// Opcional: retorna as arestas originais por onde passa flow = cap
-	vector<pair<int,int>> recover() {
-		vector<pair<int,int>> used;
+	vec<pair<int,int>> recover() {
+		vec<pair<int,int>> used;
 		for (int i = 0; i < g.size(); i++) for (edge e : g[i])
 			if(e.flow == e.cap && !e.res) used.push_back({i, e.to});
 		return used;

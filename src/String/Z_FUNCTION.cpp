@@ -1,5 +1,5 @@
-template<class Char=char>vector<int> zfun(const basic_string<Char>& w) {
-	int n = SZ(w), l = 0, r = 0; vector<int> z(n);
+template<class Char=char>vec<int> zfun(const basic_string<Char>& w) {
+	int n = SZ(w), l = 0, r = 0; vec<int> z(n);
   z[0] = w.length();
 	L(i, 1, n) {
 		if (i <= r) {z[i] = min(r - i + 1, z[i - l]);}
