@@ -1,7 +1,6 @@
 template<class T>
 struct Index{ // If only 1 use Don't need to copy T type
-    vec<T> d;
-    int sz;
+    vec<T> d; int sz;
     Index(const vec<T> &a): d(ALL(a)){
         sort(ALL(d)); // Sort 
         d.erase(unique(ALL(d)), end(d)); // Erase continuous duplicates

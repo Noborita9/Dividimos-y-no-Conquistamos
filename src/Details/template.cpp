@@ -15,3 +15,6 @@ int main(){
     //cin >> TT;
     while (TT--) {solve();}
 }
+// IF NEEDED FOR FILE READ
+// freopen("in.txt", "r", stdin);
+// freopen("out.txt", "w", stdout);

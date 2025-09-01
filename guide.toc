@@ -1,19 +1,20 @@
 \babel@toc {english}{}\relax 
 \contentsline {section}{\numberline {1}Template}{2}{section.1}%
 \contentsline {subsection}{\numberline {1.1}C++ Template}{2}{subsection.1.1}%
-\contentsline {subsection}{\numberline {1.2}Fast Python}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.2}Python Template}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {2}Search}{2}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Ternary}{2}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}Simulated Annealing}{2}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Data structures}{3}{section.3}%
-\contentsline {subsection}{\numberline {3.1}BIT}{3}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}BIT - 2D}{3}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}DSU}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Index Compession}{4}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.1}Fenwick}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Fenwick - 2D}{3}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}DSU}{3}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Index Compession}{3}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Sparse Table}{4}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Segment tree}{4}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}Segment Tree Iterativo}{5}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Policy Based}{5}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.8}Segment Tree Persistente}{5}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Policy Based}{5}{subsection.3.9}%
 \contentsline {section}{\numberline {4}Graph}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Bellman Ford}{5}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}SCC}{6}{subsection.4.2}%
@@ -27,19 +28,19 @@
 \contentsline {subsection}{\numberline {5.1}Heavy Light Decomposition}{10}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Centroid}{11}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}LCA - Binary exponentiation}{11}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}LCA - Const Time}{12}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.4}LCA - Const Time}{11}{subsection.5.4}%
 \contentsline {section}{\numberline {6}Dynamic Programming}{12}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Knapsack}{12}{subsection.6.1}%
 \contentsline {subsection}{\numberline {6.2}LIS}{12}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Edit Distance}{13}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.3}Edit Distance}{12}{subsection.6.3}%
 \contentsline {subsection}{\numberline {6.4}Kadane}{13}{subsection.6.4}%
 \contentsline {section}{\numberline {7}Strings}{13}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Hashing}{13}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Prefix Trie}{14}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.2}Prefix Trie}{13}{subsection.7.2}%
 \contentsline {subsection}{\numberline {7.3}KMP}{14}{subsection.7.3}%
 \contentsline {subsection}{\numberline {7.4}LPS}{14}{subsection.7.4}%
 \contentsline {subsection}{\numberline {7.5}Z-FUNCTION}{14}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Manacher}{15}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.6}Manacher}{14}{subsection.7.6}%
 \contentsline {subsection}{\numberline {7.7}Aho-Corasick}{15}{subsection.7.7}%
 \contentsline {subsection}{\numberline {7.8}Suffix-Array}{15}{subsection.7.8}%
 \contentsline {section}{\numberline {8}Math}{16}{section.8}%
@@ -48,11 +49,13 @@
 \contentsline {subsection}{\numberline {8.3}Josephus}{17}{subsection.8.3}%
 \contentsline {subsection}{\numberline {8.4}Mobius}{17}{subsection.8.4}%
 \contentsline {subsection}{\numberline {8.5}NTT}{18}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}FFT}{19}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.6}FFT}{18}{subsection.8.6}%
 \contentsline {subsection}{\numberline {8.7}Rho}{19}{subsection.8.7}%
 \contentsline {subsection}{\numberline {8.8}Simpson}{20}{subsection.8.8}%
 \contentsline {section}{\numberline {9}Geometry}{21}{section.9}%
 \contentsline {subsection}{\numberline {9.1}Convex Hull}{21}{subsection.9.1}%
 \contentsline {subsection}{\numberline {9.2}Operations}{21}{subsection.9.2}%
 \contentsline {subsection}{\numberline {9.3}Polygon Area}{21}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Ray Casting}{22}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.4}Ray Casting}{21}{subsection.9.4}%
+\contentsline {section}{\numberline {10}Other}{22}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Mo's algorithm}{22}{subsection.10.1}%

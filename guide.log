@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.1)  1 SEP 2025 12:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2026/dev/Arch Linux) (preloaded format=pdflatex 2025.9.1)  1 SEP 2025 14:25
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -470,24 +470,29 @@ nput line 13.
 (./src/Details/template.cpp)
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
-) (./src/Details/fast.py) (./src/Search/ternary.cpp
+)
+(./src/Details/template.py) (./src/Search/ternary.cpp
 
 ) (./src/Search/SimulatedAnnealing.cpp
 
 [2]) (./src/DataStructure/BIT.cpp
 
-) (./src/DataStructure/BIT_2d.cpp
+) (./src/DataStructure/BIT_2d.cpp) (./src/DataStructure/DSU.cpp)
 
-[3]) (./src/DataStructure/DSU.cpp) (./src/DataStructure/index_compression.cpp)
-(./src/DataStructure/SparseTable.cpp
+[3] (./src/DataStructure/index_compression.cpp)
+(./src/DataStructure/SparseTable.cpp) (./src/DataStructure/SegmentTree.cpp
 
-) (./src/DataStructure/SegmentTree.cpp
+)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[4]) (./src/DataStructure/SegmentTreeIterativo.cpp
 
-) (./src/DataStructure/policy_based.cpp) (./src/Graph/bellman.cpp
 
-[5]) (./src/Graph/SCC.cpp) (./src/Graph/hopkarp.cpp
+[4] (./src/DataStructure/SegmentTreeIterativo.cpp)
+(./src/DataStructure/SegmentTreePersistente.cpp
+
+) (./src/DataStructure/policy_based.cpp) (./src/Graph/bellman.cpp)
+
+[5] (./src/Graph/SCC.cpp) (./src/Graph/hopkarp.cpp
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -498,12 +503,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) (./src/Graph/Dinic.cpp
 
-[7]
+[7]) (./src/Graph/MCMF.cpp
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-) (./src/Graph/MCMF.cpp
 
 [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -516,29 +521,24 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ) (./src/Tree/HDL.cpp
 
-[10]) (./src/Tree/Centroid.cpp
+[10]) (./src/Tree/Centroid.cpp) (./src/Tree/LCA_log.cpp
 
-) (./src/Tree/LCA_log.cpp)
-Underfull \vbox (badness 4556) has occurred while \output is active []
+) (./src/Tree/LCA_const.cpp
 
+[11]) (./src/DP/knapsack.cpp
 
+) (./src/DP/LIS.cpp) (./src/DP/editDistance.cpp
 
-[11] (./src/Tree/LCA_const.cpp)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[12]) (./src/DP/kadane.cpp) (./src/String/HASHING.cpp
 
+) (./src/String/TRIE.cpp
 
+[13]) (./src/String/KMP.cpp
 
-(./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
+) (./src/String/LPS.cpp) (./src/String/Z_FUNCTION.cpp)
+(./src/String/Manacher.cpp
 
-[12]) (./src/DP/editDistance.cpp) (./src/DP/kadane.cpp
-
-) (./src/String/HASHING.cpp
-
-[13]) (./src/String/TRIE.cpp) (./src/String/KMP.cpp
-
-) (./src/String/LPS.cpp) (./src/String/Z_FUNCTION.cpp
-
-[14]) (./src/String/Manacher.cpp) (./src/String/AhoCorasick.cpp
+[14]) (./src/String/AhoCorasick.cpp
 
 ) (./src/String/SuffixArray.cpp
 
@@ -552,12 +552,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [17]) (./src/Math/NTT.cpp
 
+) (./src/Math/fft.cpp
 
+[18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-[18]) (./src/Math/fft.cpp
 
 ) (./src/Math/RHO.cpp
 
@@ -570,15 +570,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [20]) (./src/Geometry/CONVEX_HULL.cpp
 
-) (./src/Geometry/OPERATIONS.cpp) (./src/Geometry/POLYGON_AREA.cpp
+) (./src/Geometry/OPERATIONS.cpp) (./src/Geometry/POLYGON_AREA.cpp)
+(./src/Geometry/RAY_CASTING.cpp
 
-[21]) (./src/Geometry/RAY_CASTING.cpp)
+[21]) (./src/Other/Mo.cpp)
 
 
 
-[22
-
-] 
+[22] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./guide.aux)
  ***********
@@ -586,13 +585,13 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: AB9423C0E32EBA856423B8F809544250;6336.
+(rerunfilecheck)             Checksum: 332A74E677F017B47805D58601AF5EBF;6783.
  ) 
 Here is how much of TeX's memory you used:
- 16900 strings out of 475171
- 252736 string characters out of 5767096
- 1558912 words of memory out of 5000000
- 37897 multiletter control sequences out of 15000+600000
+ 17012 strings out of 475171
+ 254281 string characters out of 5767096
+ 1610409 words of memory out of 5000000
+ 37979 multiletter control sequences out of 15000+600000
  563294 words of font info for 54 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  80i,12n,82p,343b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -601,10 +600,10 @@ texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmt
 t10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on guide.pdf (22 pages, 237049 bytes).
+Output written on guide.pdf (22 pages, 241783 bytes).
 PDF statistics:
- 2388 PDF objects out of 2487 (max. 8388607)
- 2328 compressed objects within 24 object streams
- 1670 named destinations out of 1728 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2429 PDF objects out of 2487 (max. 8388607)
+ 2369 compressed objects within 24 object streams
+ 1694 named destinations out of 1728 (max. 500000)
+ 481 words of extra memory for PDF output out of 10000 (max. 10000000)
 
