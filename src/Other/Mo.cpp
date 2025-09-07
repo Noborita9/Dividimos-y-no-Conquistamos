@@ -15,9 +15,9 @@ U64 hilbertorder(U64 x, U64 y) {
     return res;
 } // sort by this order
 auto add = [&](int ix) { /* Add A[ix] to state*/};
-auto rem = [&](int ix) { /* Remove A[ix] from state*/}
+auto rem = [&](int ix) { /* Remove A[ix] from state*/};
 int c_l = 0, c_r = -1; // Cursors [0,-1] so r add 0 on first q
-L(const auto &qr: queries){
+for(const auto &qr: qs){
     while(c_l > qr.l) add(--c_l);
     while(c_r < qr.r) add(++c_r);
     while(c_l < qr.l) rem(c_l++);
