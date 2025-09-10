@@ -6,7 +6,6 @@ struct DSU {
         a=find(a);b=find(b);
         if (a == b) return;
         if (sz[b] > sz[a]) swap(a,b);
-        par[b] = a;
-        sz[a] += sz[b];
+        par[b] = a; sz[a] += sz[b];
     }
 };

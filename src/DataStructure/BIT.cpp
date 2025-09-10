@@ -4,12 +4,10 @@ struct FT { // 1-Index
     FT(vec<int> &v): ft(SZ(v)+1), n(SZ(v)+1) { // O(n)
         L(i, 1, n){ 
             ft[i] += v[i-1];
-            if (i + LSO(i) <= n)ft[i + LSO(i)]+=ft[i];
+            if (i + LSO(i) <= n) ft[i + LSO(i)]+=ft[i];
         }
     }
-    void update(int pos, int x){
-        for (int it=pos;it<=n;it+=LSO(it))ft[it]+=x;
-    }
+    void update(int pos, int x){ for (int it=pos;it<=n;it+=LSO(it))ft[it]+=x; }
     int sum(int pos){
         int res = 0;
         for (int it=pos;it>0;it-=LSO(it))res+=ft[it];
