@@ -1,3 +1,4 @@
+const int oo = (int)1e9;
 struct Dinic {
 	bool scaling = false; // com scaling -> O(nm log(MAXCAP)),
 	int lim;                    // com constante alta
