@@ -22,7 +22,7 @@ struct HullDynamic : public multiset<Line> { // for maximum
 		iterator x=prev(y);
 		if(z==end())return y->m==x->m&&y->b<=x->b;
 		return 1.0*(x->b-y->b)*(z->m-y->m)>=1.0*(y->b-z->b)*(y->m-x->m);
-	}
+	}//Take care of overflow!
 	iterator next(iterator y){return ++y;}
 	iterator prev(iterator y){return --y;}
 	void add(tc m, tc b){

@@ -36,7 +36,7 @@
 \fancyfoot{}
 \definecolor{darkblue}{rgb}{0,0,0.4}
 %%% Configuracion de Listings
-\lstloadlanguages{C++}
+\lstloadlanguages{C++,Java}
 \lstnewenvironment{code}
 	{%\lstset{    numbers=none, frame=lines, basicstyle=\small\ttfamily, }%
 	 \csname lst@SetFirstLabel\endcsname}
@@ -96,6 +96,48 @@
     emphstyle=[1]\color{OliveGreen}
 }
 
+\lstdefinestyle{Bash}{
+    language=bash,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{darkblue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[l][\color{OliveGreen}]{\#},
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=9pt,
+    frame=l,
+    framesep=3pt,
+    breaklines=true,
+    breakatwhitespace=false,
+    showstringspaces=false,
+    tabsize=2,
+    % Common Bash keywords and commands
+    morekeywords={if,then,else,fi,for,in,do,done,while,until,case,esac,function,select,echo,read,let,exit,return,source,export,local,unset,set,true,false,test,grep,sed,awk,find,ls,cd,cp,mv,rm,mkdir}
+}
+
+\lstdefinestyle{Java}{
+    language=Java,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\color{darkblue}\ttfamily,
+    stringstyle=\color{magenta}\ttfamily,
+    commentstyle=\color{RedOrange}\ttfamily,
+    morecomment=[s][\itshape\color{ForestGreen}]{/**}{*/}, % For Javadoc
+    numbers=left,
+    numberstyle=\tiny,
+    stepnumber=1,
+    numbersep=9pt,
+    frame=l,
+    framesep=3pt,
+    breaklines=true,
+    breakatwhitespace=false,
+    showstringspaces=false,
+    tabsize=4,
+    % Common Java keywords and classes
+    morekeywords={String,System,Scanner,BufferedReader,PrintWriter,IOException,BigInteger,ArrayList,HashMap,List,Map}
+}
+
 %%% Macros
 \def\nbtitle#1{\begin{Large}\begin{center}\textbf{#1}\end{center}\end{Large}}
 \def\nbsection#1{\section{#1}}
@@ -109,3 +151,10 @@
 \newcommand\pyfile[2][]{
     \lstinputlisting[style=Python]{#2}
 }
+\newcommand\bashfile[2][]{
+    \lstinputlisting[style=Bash]{#2}
+}
+\newcommand\javafile[2][]{
+    \lstinputlisting[style=Java]{#2}
+}
+

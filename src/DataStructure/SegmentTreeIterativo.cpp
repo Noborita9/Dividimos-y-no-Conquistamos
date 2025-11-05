@@ -10,7 +10,7 @@ struct STI {
         while((pos>>=1) > 0) st[pos] = st[pos * 2] + st[pos * 2 + 1];}
     ll query(int l, int r) { // [l, r] 
         ll res = 0;
-        for (l += K, r += K + 1; l < r; l>>=1; r>>=1){
+        for (l += K, r += K + 1; l < r; l>>=1, r>>=1){
             if (l & 1) res += st[l++];
             if (r & 1) res += st[--r];
         } 
