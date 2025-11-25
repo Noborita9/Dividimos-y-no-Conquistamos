@@ -158,3 +158,23 @@
     \lstinputlisting[style=Java]{#2}
 }
 
+% Formulas compactas y alineadas a la derecha
+\newcommand{\req}[1]{\begin{flushright}\small$\textstyle #1$\end{flushright}}
+
+% Espaciado reducido entre formulas
+\setlength\abovedisplayskip{3pt}
+\setlength\belowdisplayskip{3pt}
+\setlength\abovedisplayshortskip{2pt}
+\setlength\belowdisplayshortskip{2pt}
+
+\newcommand{\rlabel}[1]{%
+  \par\noindent\makebox[\linewidth][c]{\textbf{#1}}\par
+}
+
+\newcommand{\rtext}[1]{%
+  \par\noindent
+  \begin{minipage}{\linewidth}
+    \centering\footnotesize
+    #1%
+  \end{minipage}\par
+}
