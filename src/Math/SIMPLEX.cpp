@@ -1,50 +1,63 @@
-vector<int> X,Y;
-vector<vector<double> > A;
-vector<double> b,c;
-double z;
-int n,m;
-void pivot(int x,int y){
-	swap(X[y],Y[x]);
-	b[x]/=A[x][y];
-	fore(i,0,m)if(i!=y)A[x][i]/=A[x][y];
-	A[x][y]=1/A[x][y];
-	fore(i,0,n)if(i!=x&&abs(A[i][y])>EPS){
-		b[i]-=A[i][y]*b[x];
-		fore(j,0,m)if(j!=y)A[i][j]-=A[i][y]*A[x][j];
-		A[i][y]=-A[i][y]*A[x][y];
-	}
-	z+=c[y]*b[x];
-	fore(i,0,m)if(i!=y)c[i]-=c[y]*A[x][i];
-	c[y]=-c[y]*A[x][y];
-}
-pair<double,vector<double> > simplex( // maximize c^T x s.t. Ax<=b, x>=0
-		vector<vector<double> > _A, vector<double> _b, vector<double> _c){
-	// returns pair (maximum value, solution vector)
-	A=_A;b=_b;c=_c;
-	n=b.size();m=c.size();z=0.;
-	X=vector<int>(m);Y=vector<int>(n);
-	fore(i,0,m)X[i]=i;
-	fore(i,0,n)Y[i]=i+m;
-	while(1){
-		int x=-1,y=-1;
-		double mn=-EPS;
-		fore(i,0,n)if(b[i]<mn)mn=b[i],x=i;
-		if(x<0)break;
-		fore(i,0,m)if(A[x][i]<-EPS){y=i;break;}
-		assert(y>=0); // no solution to Ax<=b
-		pivot(x,y);
-	}
-	while(1){
-		double mx=EPS;
-		int x=-1,y=-1;
-		fore(i,0,m)if(c[i]>mx)mx=c[i],y=i;
-		if(y<0)break;
-		double mn=1e200;
-		fore(i,0,n)if(A[i][y]>EPS&&b[i]/A[i][y]<mn)mn=b[i]/A[i][y],x=i;
-		assert(x>=0); // c^T x is unbounded
-		pivot(x,y);
-	}
-	vector<double> r(m);
-	fore(i,0,n)if(Y[i]<m)r[Y[i]]=b[i];
-	return {z,r};
+pair<ld, vec<ld>> simplex(vec<vec<ld>> A, vec<ld> b, vec<ld> c) {
+    const ld EPS = (ld)1e-9;
+    int n = SZ(b), m = SZ(c);
+
+    vec<int> X(m), Y(n);
+    L(j, 0, m) X[j] = j;        
+    L(i, 0, n) Y[i] = m + i;    
+
+    ld z = 0; 
+
+    auto pivot = [&](int x, int y) {
+        swap(X[y], Y[x]);
+
+        ld inv = (ld)1 / A[x][y];
+        b[x] *= inv;
+        L(j, 0, m) if (j != y) A[x][j] *= inv;
+        A[x][y] = inv;
+
+        L(i, 0, n) if (i != x && fabsl(A[i][y]) > EPS) {
+            ld coef = A[i][y];
+            b[i] -= coef * b[x];
+            L(j, 0, m) if (j != y) A[i][j] -= coef * A[x][j];
+            A[i][y] = -coef * A[x][y];
+        }
+
+        z += c[y] * b[x];
+        L(j, 0, m) if (j != y) c[j] -= c[y] * A[x][j];
+        c[y] = -c[y] * A[x][y];
+        };
+
+    while (true) {
+        int x = -1, y = -1;
+        ld mn = -EPS;
+        L(i, 0, n) if (b[i] < mn) { mn = b[i]; x = i; }
+        if (x < 0) break;
+        L(j, 0, m) if (A[x][j] < -EPS) { y = j; break; }
+        if (y < 0) {
+            return { numeric_limits<ld>::quiet_NaN(), {} };
+        }
+        pivot(x, y);
+    }
+
+    while (true) {
+        int y = -1, x = -1;
+        ld mx = EPS;
+        L(j, 0, m) if (c[j] > mx) { mx = c[j]; y = j; }
+        if (y < 0) break;
+
+        ld best = numeric_limits<ld>::infinity();
+        L(i, 0, n) if (A[i][y] > EPS) {
+            ld val = b[i] / A[i][y];
+            if (val < best) { best = val; x = i; }
+        }
+        if (x < 0) {
+            return { numeric_limits<ld>::infinity(), {} };
+        }
+        pivot(x, y);
+    }
+
+    vec<ld> sol(m, 0);
+    L(i, 0, n) if (Y[i] < m) sol[Y[i]] = b[i];
+    return { z, sol };
 }

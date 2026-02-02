@@ -4,7 +4,7 @@ struct ACvertex {
 	int p,link;
 	char pch;
 	vec<int> leaf;
-	ACACvertex(int p=-1, char pch=-1):p(p),pch(pch),link(-1){}
+	ACvertex(int p_=-1, char pch_=-1):p(p_),link(-1),pch(pch_){}
 };
 vec<ACvertex> t;
 void aho_init(){ //do not forget!!
