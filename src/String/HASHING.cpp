@@ -21,16 +21,3 @@ struct StrHash { // Hash polinomial con exponentes decrecientes.
 		return (h[0] << 32) | h[1];
 	}
 };
-
-pll union_hash(vec<pll> hs, vec<ll> lens){ //use arrays makes it slower
-	ll len = 0;
-	for(int i = hs.size()-1; i > 0; i--){
-		len += lens[i];
-		pll& [l1, l2] = hs[i];
-		pll& [r1, r2] = hs[i-1];
-		l1 = ((l1 * binpow(b, len, ms[0])) % ms[0] + r1) % ms[0];
-		l2 = ((l2 * binpow(b, len, ms[1])) % ms[1] + r2) % ms[1];
-	}
-
-	return hs[0];
-}

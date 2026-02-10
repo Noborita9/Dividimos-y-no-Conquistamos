@@ -4,10 +4,10 @@ struct SQRTDecomp {
         L(i,1,n) Bid[i] = Bid[i - 1] + (i % BLOCK_SIZE == 0);
     } // useful if many updates not many queries, may be better than st
     void upd(int ix, int w) { B[ix] += w; Bs[Bid[ix]] += w;} // O(1)
-    int query(int l, int r){ // O(BLOCK_SIZE)
+    int query(int l, int r){ // O(BLOCK_SIZE) // [l, r)
         int ans = 0;
-        for (int i = l; i <= r;) { // [l, r]
-            if (i + BLOCK_SIZE > r || (i % BLOCK_SIZE) != 0) ans += B[i ++];
+        for (int i = l; i < r;) {
+            if (i + BLOCK_SIZE >= r || (i % BLOCK_SIZE) != 0) ans += B[i ++];
             else { ans += Bs[Bid[i]]; i += BLOCK_SIZE;}
         }
         return ans;

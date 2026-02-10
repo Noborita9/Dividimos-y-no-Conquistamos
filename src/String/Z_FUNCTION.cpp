@@ -1,6 +1,6 @@
-template<class Char=char>vec<int> zfun(const basic_string<Char>& w) {
+vec<int> zfun(const string &w){
 	int n = SZ(w), l = 0, r = 0; vec<int> z(n);
-  z[0] = w.length();
+  	z[0] = n;
 	L(i, 1, n) {
 		if (i <= r) {z[i] = min(r - i + 1, z[i - l]);}
 		while (i + z[i] < n && w[z[i]] == w[i + z[i]]) {++z[i];}

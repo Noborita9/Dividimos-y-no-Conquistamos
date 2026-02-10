@@ -11,7 +11,7 @@ void csort(vec<int>& sa, vec<int>& r, int k) {
 vec<int> compute_sa(string& s){ // O(n*log2(n))
 	int n = SZ(s) + 1, rank;
 	vec<int> sa(n), r(n), t(n);
-	iota(all(sa), 0);
+	iota(ALL(sa), 0);
 	L(i,0, n) r[i] = s[i];
 	for (int k = 1; k < n; k *= 2) {
 		csort(sa, r, k), csort(sa, r, 0);
