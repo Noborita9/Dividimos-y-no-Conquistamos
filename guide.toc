@@ -22,49 +22,50 @@
 \contentsline {subsection}{\numberline {4.2}SCC}{6}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Bipartite Matching Hopcroft-Karp - With Konig}{6}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Hungarian}{7}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Flow - Dinics}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Flow - Dinics}{8}{subsection.4.5}%
 \contentsline {subsection}{\numberline {4.6}Flow - MinCostMaxFlow}{8}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}2-Sat}{9}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.7}2-Sat}{10}{subsection.4.7}%
 \contentsline {subsection}{\numberline {4.8}Euler Tour}{10}{subsection.4.8}%
-\contentsline {section}{\numberline {5}Trees}{10}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Heavy Light Decomposition}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Centroid}{11}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}LCA - Const Time}{11}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Dynamic Programming}{12}{section.6}%
-\contentsline {subsection}{\numberline {6.1}LIS}{12}{subsection.6.1}%
-\contentsline {section}{\numberline {7}Strings}{12}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Hashing}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}KMP}{12}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Z-Function}{12}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Manacher}{13}{subsection.7.4}%
-\contentsline {subsection}{\numberline {7.5}Aho-Corasick}{13}{subsection.7.5}%
-\contentsline {subsection}{\numberline {7.6}Suffix-Array}{13}{subsection.7.6}%
-\contentsline {subsection}{\numberline {7.7}Suffix-Automaton}{14}{subsection.7.7}%
-\contentsline {section}{\numberline {8}Math}{14}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Euclidean Extended}{14}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Euler Totient}{15}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Josephus}{15}{subsection.8.3}%
-\contentsline {subsection}{\numberline {8.4}Mobius}{15}{subsection.8.4}%
-\contentsline {subsection}{\numberline {8.5}NTT}{15}{subsection.8.5}%
-\contentsline {subsection}{\numberline {8.6}FFT}{16}{subsection.8.6}%
-\contentsline {subsection}{\numberline {8.7}Rho}{17}{subsection.8.7}%
-\contentsline {subsection}{\numberline {8.8}Get Divisors}{18}{subsection.8.8}%
-\contentsline {subsection}{\numberline {8.9}Simpson}{18}{subsection.8.9}%
-\contentsline {subsection}{\numberline {8.10}Simplex}{18}{subsection.8.10}%
-\contentsline {section}{\numberline {9}Geometry}{19}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Point Definition}{19}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Convex Hull}{19}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Operations}{20}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Polygon Area}{20}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Ray Casting}{20}{subsection.9.5}%
-\contentsline {section}{\numberline {10}Other}{20}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Mo's algorithm}{20}{subsection.10.1}%
-\contentsline {section}{\numberline {11}Ecuations}{21}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Combinatorics}{21}{subsection.11.1}%
-\contentsline {subsection}{\numberline {11.2}Discreta}{21}{subsection.11.2}%
-\contentsline {subsection}{\numberline {11.3}Trigonometry}{23}{subsection.11.3}%
-\contentsline {subsection}{\numberline {11.4}Catalan Numbers}{23}{subsection.11.4}%
-\contentsline {subsection}{\numberline {11.5}Geometry}{24}{subsection.11.5}%
-\contentsline {subsection}{\numberline {11.6}Useful math}{25}{subsection.11.6}%
-\contentsline {subsection}{\numberline {11.7}Mobius}{27}{subsection.11.7}%
-\contentsline {subsection}{\numberline {11.8}Burnside}{27}{subsection.11.8}%
+\contentsline {subsection}{\numberline {4.9}Directed MST/Arborescence}{10}{subsection.4.9}%
+\contentsline {section}{\numberline {5}Trees}{11}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Heavy Light Decomposition}{11}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Centroid}{12}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}LCA - Const Time}{12}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Dynamic Programming}{13}{section.6}%
+\contentsline {subsection}{\numberline {6.1}LIS}{13}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Strings}{13}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Hashing}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {7.2}KMP}{13}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Z-Function}{13}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Manacher}{14}{subsection.7.4}%
+\contentsline {subsection}{\numberline {7.5}Aho-Corasick}{14}{subsection.7.5}%
+\contentsline {subsection}{\numberline {7.6}Suffix-Array}{14}{subsection.7.6}%
+\contentsline {subsection}{\numberline {7.7}Suffix-Automaton}{15}{subsection.7.7}%
+\contentsline {section}{\numberline {8}Math}{15}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Euclidean Extended}{15}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Euler Totient}{16}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Josephus}{16}{subsection.8.3}%
+\contentsline {subsection}{\numberline {8.4}Mobius}{16}{subsection.8.4}%
+\contentsline {subsection}{\numberline {8.5}NTT}{17}{subsection.8.5}%
+\contentsline {subsection}{\numberline {8.6}FFT}{17}{subsection.8.6}%
+\contentsline {subsection}{\numberline {8.7}Rho}{18}{subsection.8.7}%
+\contentsline {subsection}{\numberline {8.8}Get Divisors}{19}{subsection.8.8}%
+\contentsline {subsection}{\numberline {8.9}Simpson}{19}{subsection.8.9}%
+\contentsline {subsection}{\numberline {8.10}Simplex}{19}{subsection.8.10}%
+\contentsline {section}{\numberline {9}Geometry}{20}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Point Definition}{20}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Convex Hull}{20}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Operations}{21}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Polygon Area}{21}{subsection.9.4}%
+\contentsline {subsection}{\numberline {9.5}Ray Casting}{21}{subsection.9.5}%
+\contentsline {section}{\numberline {10}Other}{21}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Mo's algorithm}{21}{subsection.10.1}%
+\contentsline {section}{\numberline {11}Ecuations}{22}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Combinatorics}{22}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Discreta}{22}{subsection.11.2}%
+\contentsline {subsection}{\numberline {11.3}Trigonometry}{24}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Catalan Numbers}{24}{subsection.11.4}%
+\contentsline {subsection}{\numberline {11.5}Geometry}{25}{subsection.11.5}%
+\contentsline {subsection}{\numberline {11.6}Useful math}{26}{subsection.11.6}%
+\contentsline {subsection}{\numberline {11.7}Mobius}{28}{subsection.11.7}%
+\contentsline {subsection}{\numberline {11.8}Burnside}{28}{subsection.11.8}%
