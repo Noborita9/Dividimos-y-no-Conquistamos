@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  9 FEB 2026 22:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.20)  24 FEB 2026 21:35
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -450,18 +450,18 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-
-
-[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-
-])
+)
 \tf@toc=\write4
 \openout4 = `guide.toc'.
 
 
 
+[1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 13.
+
 (./src/Details/template.cpp)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
@@ -469,208 +469,196 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-(./src/Details/cmd_setup.sh)
+(./src/Details/cmd_setup.sh) (./src/Details/Int128.cpp
+
+) (./src/Details/RNG.cpp)
 (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-(./src/Details/template.py) (./src/Details/template.java
+(./src/Details/template.py) (./src/Search/ternary.cpp
 
 [2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}])
-Underfull \vbox (badness 10000) has occurred while \output is active []
+}]) (./src/DataStructure/BIT.cpp) (./src/DataStructure/BIT_2d.cpp
 
+) (./src/DataStructure/DSU.cpp) (./src/DataStructure/SparseTable.cpp
 
+[3]) (./src/DataStructure/SegmentTree.cpp
 
-(./src/Search/ternary.cpp) (./src/Search/SimulatedAnnealing.cpp
-
-[3]) (./src/DataStructure/BIT.cpp
-
-) (./src/DataStructure/BIT_2d.cpp) (./src/DataStructure/DSU.cpp
-
-[4]) (./src/DataStructure/index_compression.cpp)
-(./src/DataStructure/SparseTable.cpp)
-
-(./src/DataStructure/SegmentTree.cpp
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[5]) (./src/DataStructure/SegmentTreeIterativo.cpp)
+) (./src/DataStructure/SegmentTreeIterativo.cpp)
 (./src/DataStructure/SegmentTreePersistente.cpp
 
-) (./src/DataStructure/policy_based.cpp) (./src/DataStructure/SQRTDecomp.cpp
+[4]) (./src/DataStructure/policy_based.cpp)
 
-[6]) (./src/DataStructure/ChullTrick.cpp
+(./src/DataStructure/ChullTrick.cpp)
 
-) (./src/Graph/bellman.cpp) (./src/Graph/SCC.cpp
+[5] (./src/Graph/bellman.cpp) (./src/Graph/SCC.cpp) (./src/Graph/hopkarp.cpp
 
-[7]) (./src/Graph/hopkarp.cpp
 
-) (./src/Graph/hungarian.cpp
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[6]) (./src/Graph/hungarian.cpp
+
+) (./src/Graph/Dinic.cpp
+
+[7]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+) (./src/Graph/MCMF.cpp
 
 [8]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-) (./src/Graph/Dinic.cpp
-
-[9]) (./src/Graph/MCMF.cpp
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-[10]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
 ) (./src/Graph/TwoSat.cpp
 
-[11]) (./src/Graph/EulerTour.cpp)
+[9])
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-(./src/Tree/HDL.cpp
 
-[12]) (./src/Tree/Centroid.cpp) (./src/Tree/LCA_log.cpp
+
+(./src/Graph/EulerTour.cpp) (./src/Tree/HDL.cpp
+
+[10]) (./src/Tree/Centroid.cpp
 
 ) (./src/Tree/LCA_const.cpp
 
-[13]) (./src/DP/knapsack.cpp) (./src/DP/LIS.cpp
-
-) (./src/DP/editDistance.cpp
-
-[14]) (./src/DP/kadane.cpp) (./src/String/HASHING.cpp
+[11]) (./src/DP/LIS.cpp) (./src/String/HASHING.cpp
 
 ) (./src/String/KMP.cpp) (./src/String/Z_FUNCTION.cpp)
 
-[15] (./src/String/Manacher.cpp) (./src/String/AhoCorasick.cpp
+[12] (./src/String/Manacher.cpp) (./src/String/AhoCorasick.cpp
 
 ) (./src/String/SuffixArray.cpp
 
-[16]) (./src/Math/EUCLIDEAN_EXTENDED.cpp
+[13]) (./src/String/SuffixAutomaton.cpp
 
-) (./src/Math/EULER_TOTIENT.cpp
+) (./src/Math/EUCLIDEAN_EXTENDED.cpp
 
-[17]) (./src/Math/JOSEPHUS.cpp
+[14]) (./src/Math/EULER_TOTIENT.cpp) (./src/Math/JOSEPHUS.cpp
 
-) (./src/Math/MOBIUS.cpp
+) (./src/Math/MOBIUS.cpp) (./src/Math/NTT.cpp
 
-[18]) (./src/Math/NTT.cpp
+[15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 ) (./src/Math/fft.cpp
 
-[19]
+[16]) (./src/Math/RHO.cpp
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-) (./src/Math/RHO.cpp
+[17]) (./src/Math/GetDivisors.cpp) (./src/Math/SIMPSON.cpp
 
-[20]) (./src/Math/GetDivisors.cpp
+) (./src/Math/SIMPLEX.cpp
 
-) (./src/Math/SIMPSON.cpp) (./src/Math/SIMPLEX.cpp
+[18]) (./src/Geometry/Point.cpp
 
-[21]
+) (./src/Geometry/CONVEX_HULL.cpp
+
+[19]) (./src/Geometry/OPERATIONS.cpp) (./src/Geometry/POLYGON_AREA.cpp
+
+) (./src/Geometry/RAY_CASTING.cpp) (./src/Other/Mo.cpp
+
+[20]) (./src/MathFormulas/Combinatorias.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-
-) (./src/Geometry/Point.cpp) (./src/Geometry/CONVEX_HULL.cpp
-
-[22]) (./src/Geometry/OPERATIONS.cpp
-
-) (./src/Geometry/POLYGON_AREA.cpp) (./src/Geometry/RAY_CASTING.cpp)
-Underfull \vbox (badness 3872) has occurred while \output is active []
-
-
-
-[23] (./src/Other/Mo.cpp) (./src/MathFormulas/Combinatorias.tex
 
 ) (./src/MathFormulas/Discreta.tex
 
-[24]
+[21]
 
 
 
-[25]) (./src/MathFormulas/Trigonometry.tex
+[22]) (./src/MathFormulas/Trigonometry.tex
 
 ) (./src/MathFormulas/CatalanNumbers.tex
 
+[23]) (./src/MathFormulas/GeometryAreas.tex
+
+
+
+[24]) (./src/MathFormulas/UsefulMath.tex
+
+
+
+[25]
+
+) (./src/MathFormulas/Mobius.tex
+
 [26]
 
-) (./src/MathFormulas/GeometryAreas.tex
+) (./src/MathFormulas/Burnside.tex)
 
-[27]
-
-) (./src/MathFormulas/UsefulMath.tex
-
-[28]
-
-
-
-[29]) (./src/MathFormulas/Mobius.tex
-
-
-
-[30]) (./src/MathFormulas/Burnside.tex)
-
-
-
-[31
-
-] 
+[27] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (./guide.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `guide.out' has not changed.
-(rerunfilecheck)             Checksum: 68330FA33BCC964B77D9A64C2F420930;8427.
+(rerunfilecheck)             Checksum: 7A63E08937934B25FB4FA1DF167C6A52;7679.
  ) 
 Here is how much of TeX's memory you used:
- 17587 strings out of 473190
- 264830 string characters out of 5715800
- 1608927 words of memory out of 5000000
- 38614 multiletter control sequences out of 15000+600000
+ 17087 strings out of 473190
+ 257688 string characters out of 5715800
+ 1583350 words of memory out of 5000000
+ 38354 multiletter control sequences out of 15000+600000
  570424 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,12n,82p,343b,2177s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pf
-b></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9
-.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
-pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.p
-fb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb
-></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
-/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/l
-ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/te
-xlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texli
-ve/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
-2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/202
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2025/texmf-dist/font
-s/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/
-fonts/type1/public/cm-super/sftt0900.pfb>
-Output written on guide.pdf (31 pages, 531330 bytes).
+ 80i,12n,82p,343b,2161s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{page.28} has been referenced but does not exist, re
+placed by a fixed one
+
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb>
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.p
+fb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pf
+b></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></u
+sr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
+/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/loc
+al/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
+ive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+25/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2025/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2025/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2025/texmf-dist/font
+s/type1/public/amsfonts/cm/cmtt9.pfb></usr/local/texlive/2025/texmf-dist/fonts/
+type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2025/texmf-dist/fo
+nts/type1/public/cm-super/sftt0900.pfb>
+Output written on guide.pdf (27 pages, 509537 bytes).
 PDF statistics:
- 2802 PDF objects out of 2984 (max. 8388607)
- 2684 compressed objects within 27 object streams
- 1828 named destinations out of 2073 (max. 500000)
- 593 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2493 PDF objects out of 2984 (max. 8388607)
+ 2382 compressed objects within 24 object streams
+ 1603 named destinations out of 1728 (max. 500000)
+ 553 words of extra memory for PDF output out of 10000 (max. 10000000)
 
