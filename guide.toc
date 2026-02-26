@@ -57,13 +57,12 @@
 \contentsline {subsection}{\numberline {8.11}EXP MAT}{21}{subsection.8.11}%
 \contentsline {subsection}{\numberline {8.12}GAUSS}{21}{subsection.8.12}%
 \contentsline {section}{\numberline {9}Geometry}{23}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Point Definition}{23}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Convex Hull}{23}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Operations}{23}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Polygon Area}{24}{subsection.9.4}%
-\contentsline {subsection}{\numberline {9.5}Ray Casting}{24}{subsection.9.5}%
+\contentsline {subsection}{\numberline {9.1}Convex Hull}{23}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Operations}{23}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Polygon Area}{23}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Ray Casting}{24}{subsection.9.4}%
 \contentsline {section}{\numberline {10}Other}{24}{section.10}%
 \contentsline {subsection}{\numberline {10.1}Mo's algorithm}{24}{subsection.10.1}%
-\contentsline {section}{\numberline {11}Ecuations}{25}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Combinatorics}{25}{subsection.11.1}%
+\contentsline {section}{\numberline {11}Ecuations}{24}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Combinatorics}{24}{subsection.11.1}%
 \contentsline {subsection}{\numberline {11.2}Catalan Numbers}{25}{subsection.11.2}%

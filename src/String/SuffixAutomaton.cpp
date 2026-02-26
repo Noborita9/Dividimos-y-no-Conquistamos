@@ -14,7 +14,7 @@ void sa_extend(char c){
 		int q=st[p].next[c];
 		if(st[p].len+1==st[q].len)st[k].link=q;
 		else {
-			int w=sz++;
+			int w=sz++; // Is clone should not be counted!!!
 			st[w].len=st[p].len+1;
 			st[w].next=st[q].next;st[w].link=st[q].link;
 			for(;p!=-1&&st[p].next[c]==q;p=st[p].link)st[p].next[c]=w;
