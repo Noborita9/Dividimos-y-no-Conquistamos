@@ -1,7 +1,7 @@
 struct STI {
     vec<ll> st; int n, K;
     STI(vec<ll> &a): n(SZ(a)), K(1) {
-        while(K<=n) K<<=1;
+        while(K<n) K<<=1;
         st.assign(2*K, 0); // 0 default
         L(i,0,n) st[K+i] = a[i];
         for (int i = K - 1; i > 0; i --) st[i] = st[i*2] + st[i*2+1];}
